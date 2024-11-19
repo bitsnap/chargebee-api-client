@@ -3,7 +3,8 @@ set +eux
 
 cd "$(dirname "$0")" || exit 1
 
-golangci-lint run -c .golangci.yml
+golangci-lint run -c .golangci.yml --fix
+go fmt ./...
 gofmt -s -r 'interface{} -> any' -w .
 goimports -w .
 gofumpt -w .
