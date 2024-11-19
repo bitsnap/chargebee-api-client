@@ -2,6 +2,16 @@
 
 [Bitsnap](https://bitsnap.io) Operational Intelligence Platform [Chargebee](https://www.chargebee.com/) golang API client package.
 
+Existing accounting platforms deemed to be unreliable - potential ledger data loss with inconsistent API specs made long-term use and interoperability quite a gamble.
+Yuriy is publishing an up-to-date Accounting services API Clients with long term support in mind, to uncover and point out API specs and documentation inconsistencies. 
+There are no o
+
+### Usage
+
+```go
+
+```
+
 ### Development
 
 Install [asdf](https://asdf-vm.com/guide/getting-started.html) with all the dependencies
@@ -30,14 +40,27 @@ go install github.com/onsi/ginkgo/v2/ginkgo@latest
 ### Code generation
 
 ```bash
-go generate chargebee/...
+# will scrape the existing API documentation pages and emit the respective API client methods
+# enums and models validation, where applicable
+
+go generate ./...
 ```
 
 ### Testing
 
 ```bash
+# trial Chargebee sites are suffixed with *-test 
+# make sure to double check - it was not documented properly
 
+CHARGEBEE_API_TOKEN=test_xxx CHARGEBEE_SITE=xxx-test ginkgo run ./...
 ```
+
+### TODO
+ - [ ] refactor scraping
+ - [ ] maybe introduce some attr filtering
+ - [ ] implement webhook API endpoints for CDC streaming
+ - [ ] provide [Apache Flink](https://flink.apache.org/) [JNI source](https://nightlies.apache.org/flink/flink-docs-master/docs/dev/datastream/sources/) binding  
+ - [ ] provide [Argo Events](https://argoproj.github.io/argo-events/) source binding
 
 ## License
 

@@ -4,7 +4,7 @@ go 1.23
 
 require (
 	github.com/PuerkitoBio/goquery v1.10.0
-	github.com/bitsnap/go-util v0.0.0-20241119090140-723d36893011
+	github.com/bitsnap/go-util v0.0.0-20241119133308-c690004783aa
 	github.com/davecgh/go-spew v1.1.1
 	github.com/goccy/go-json v0.10.3
 	github.com/gocolly/colly/v2 v2.1.0
@@ -43,20 +43,20 @@ require (
 	github.com/sergi/go-diff v1.2.0 // indirect
 	github.com/spf13/afero v1.6.0 // indirect
 	github.com/temoto/robotstxt v1.1.1 // indirect
-	github.com/uptrace/opentelemetry-go-extra/otelutil v0.3.1 // indirect
-	github.com/uptrace/opentelemetry-go-extra/otelzap v0.3.1 // indirect
+	github.com/uptrace/opentelemetry-go-extra/otelutil v0.3.2 // indirect
+	github.com/uptrace/opentelemetry-go-extra/otelzap v0.3.2 // indirect
 	github.com/valyala/bytebufferpool v1.0.0 // indirect
 	github.com/valyala/fasthttp v1.51.0 // indirect
 	github.com/valyala/tcplisten v1.0.0 // indirect
-	go.opentelemetry.io/otel v1.27.0 // indirect
-	go.opentelemetry.io/otel/log v0.3.0 // indirect
-	go.opentelemetry.io/otel/metric v1.27.0 // indirect
-	go.opentelemetry.io/otel/trace v1.27.0 // indirect
+	go.opentelemetry.io/otel v1.32.0 // indirect
+	go.opentelemetry.io/otel/log v0.8.0 // indirect
+	go.opentelemetry.io/otel/metric v1.32.0 // indirect
+	go.opentelemetry.io/otel/trace v1.32.0 // indirect
 	go.uber.org/multierr v1.11.0 // indirect
 	go.uber.org/zap v1.27.0 // indirect
 	golang.org/x/exp v0.0.0-20240719175910-8a7402abbf56 // indirect
-	golang.org/x/net v0.29.0 // indirect
-	golang.org/x/sys v0.25.0 // indirect
+	golang.org/x/net v0.31.0 // indirect
+	golang.org/x/sys v0.27.0 // indirect
 	golang.org/x/text v0.20.0 // indirect
 	golang.org/x/tools v0.23.0 // indirect
 	google.golang.org/appengine v1.6.6 // indirect
