@@ -1,14 +1,45 @@
 ### [Bitsnap](https://bitsnap.io) Chargebee API Client
 
-[Bitsnap](https://bitsnap.io) Operational Intelligence Platform [Chargebee](https://www.chargebee.com/) golang API client package.
+[Bitsnap](https://bitsnap.io) Operational Intelligence Platform [Chargebee](https://www.chargebee.com/) client package.
 
-Existing accounting platforms deemed to be unreliable - potential ledger data loss with inconsistent API specs made long-term use and interoperability quite a gamble.
-Yuriy is publishing an up-to-date Accounting services API Clients with long term support in mind, to uncover and point out API specs and documentation inconsistencies. 
-There are no o
+Existing accounting platforms often suffer from reliability issues, such as potential ledger data loss and inconsistent API specifications, 
+making long-term use and interoperability risky. To address these challenges, Yuriy is publishing up-to-date Accounting Services API Clients with a focus on long-term support. 
+These clients aim to uncover and highlight inconsistencies in API specifications and documentation.
 
 ### Usage
 
 ```go
+package main 
+
+import (
+  "time"
+  
+  "github.com/bitsnap/chargebee-api-client"
+)
+
+// set CHARGEBEE_API_TOKEN and CHARGEBEE_SITE variables
+//
+func main() {
+  // or specify the respective values explicitly
+  chargebee.UseToken("test_very_secure_token")
+  chargebee.UseSite("test-ier-site")
+  
+  // Lists all customers, without pagination
+  // Be mindful of API requests limits
+  customers, err := chargebee.ListAllCustomers()
+  
+  // Lists with pagination offset
+  customers, offset, err := chargebee.ListCustomers()
+
+  // Gets next page with the previous offset
+  // All entries are sorted by updated_at field, by default
+  moreCustomers, newOffset, err := chargebee.ListCustomersPage(offset)
+  
+  // Use created_at updated_at filters to stream changes
+  halfHourAgo := time.Now().Add(-30 * time.Minute)
+  updatedCustomers, err := chargebee.ListCustomersUpdatedSince(&halfHourAgo)
+  createdCustomers, err := chargebee.ListCustomersCreatedSince(&halfHourAgo)
+}
 
 ```
 

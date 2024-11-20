@@ -3,30 +3,29 @@ package chargebee
 // THIS IS GENERATED CODE. DO NOT EDIT.
 
 import (
-	"net/url"
-
 	. "github.com/bitsnap/chargebee-api-client/chargebee/client"
 	"github.com/bitsnap/chargebee-api-client/chargebee/enums"
 	"github.com/bitsnap/chargebee-api-client/chargebee/models"
 	"github.com/goccy/go-json"
 	"github.com/gofiber/fiber/v2"
+	"net/url"
 )
 
 type DifferentialPrice struct {
-	Id               string                `json:"id" validate:"required"`
-	ItemPriceId      string                `json:"item_price_id" validate:"required"`
-	ParentItemId     string                `json:"parent_item_id" validate:"required"`
-	Price            uint64                `json:"price"`
-	PriceInDecimal   string                `json:"price_in_decimal"`
-	Status           enums.StatusEnum      `json:"status"`
-	ResourceVersion  int64                 `json:"resource_version"`
-	UpdatedAt        uint64                `json:"updated_at"`
-	CreatedAt        uint64                `json:"created_at" validate:"required"`
-	ModifiedAt       uint64                `json:"modified_at" validate:"required"`
-	CurrencyCode     string                `json:"currency_code" validate:"required"`
-	BusinessEntityId string                `json:"business_entity_id"`
-	Tiers            []models.Tier         `json:"tiers"`
-	ParentPeriods    []models.ParentPeriod `json:"parent_periods"`
+    Id string `json:"id" validate:"required"`
+    ItemPriceId string `json:"item_price_id" validate:"required"`
+    ParentItemId string `json:"parent_item_id" validate:"required"`
+    Price uint64 `json:"price"`
+    PriceInDecimal string `json:"price_in_decimal"`
+    Status enums.StatusEnum `json:"status"`
+    ResourceVersion int64 `json:"resource_version"`
+    UpdatedAt uint64 `json:"updated_at"`
+    CreatedAt uint64 `json:"created_at" validate:"required"`
+    ModifiedAt uint64 `json:"modified_at" validate:"required"`
+    CurrencyCode string `json:"currency_code" validate:"required"`
+    BusinessEntityId string `json:"business_entity_id"`
+    Tiers []models.Tier `json:"tiers"`
+    ParentPeriods []models.ParentPeriod `json:"parent_periods"`
 }
 
 func ListDifferentialPricesPageSortBy(site string, offset string, sortBy *SortBy) ([]DifferentialPrice, string, error) {
@@ -37,43 +36,43 @@ func ListDifferentialPricesPageSortBy(site string, offset string, sortBy *SortBy
 	if err != nil {
 		return nil, "", err
 	}
-
-	content, err := GetQuery(client, parsedUrl, offset, sortBy)
-	if err != nil {
-		return nil, "", err
-	}
-
+	
+    content, err := GetQuery(client, parsedUrl, offset, sortBy)
+    if err != nil {
+        return nil, "", err
+    }
+    		
 	type DifferentialPriceListItem struct {
 		DifferentialPrice DifferentialPrice `json:"DifferentialPrice"`
 	}
 
-	type DifferentialPricePage struct {
-		List       []DifferentialPriceListItem `json:"list"`
-		NextOffset string                      `json:"next_offset,omitempty"`
-	}
+    type DifferentialPricePage struct {
+        List       []DifferentialPriceListItem `json:"list"`
+        NextOffset string `json:"next_offset,omitempty"`
+    }
 
 	entries := DifferentialPricePage{
-		List: make([]DifferentialPriceListItem, 0, 10),
+		List:       make([]DifferentialPriceListItem, 0, 10),
 	}
 
 	err = json.Unmarshal(content, &entries)
 	if err != nil {
 		return nil, "", err
 	}
-
+	
 	if len(entries.List) == 0 {
-		return []DifferentialPrice{}, "", nil
-	}
-
+        return []DifferentialPrice{}, "", nil
+    }
+	
 	result := make([]DifferentialPrice, 0, len(entries.List))
 	for _, r := range entries.List {
 		result = append(result, r.DifferentialPrice)
 	}
 
-	if len(entries.NextOffset) > 0 {
-		return ResultWithOffset(result, offset, entries.NextOffset)
-	}
-
+    if len(entries.NextOffset) > 0 {
+        return ResultWithOffset(result, offset, entries.NextOffset)
+    }
+	
 	return result, "", nil
 }
 
@@ -89,17 +88,17 @@ func RetrieveDifferentialPriceById(site string, id string) (*DifferentialPrice, 
 	if err != nil {
 		return nil, err
 	}
-
-	content, err := GetQuery(client, parsedUrl, "", nil)
-	if err != nil {
-		return nil, err
-	}
-
+	
+    content, err := GetQuery(client, parsedUrl, "", nil)
+    if err != nil {
+        return nil, err
+    }
+    	
 	type DifferentialPriceItem struct {
 		DifferentialPrice DifferentialPrice `json:"DifferentialPrice"`
 	}
 
-	var item DifferentialPriceItem
+    var item DifferentialPriceItem
 
 	err = json.Unmarshal(content, &item)
 	if err != nil {

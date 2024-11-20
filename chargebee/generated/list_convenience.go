@@ -3,10 +3,12 @@ package chargebee
 // THIS IS GENERATED CODE. DO NOT EDIT.
 
 import (
+	. "github.com/bitsnap/chargebee-api-client/chargebee/client"
 	"time"
 
-	. "github.com/bitsnap/chargebee-api-client/chargebee/client"
 )
+
+
 
 func ListBusinessEntityTransfers(site string) ([]BusinessEntityTransfer, error) {
 	return ListAll(site, DefaultSortBy(), ListBusinessEntityTransfersPageSortBy)
@@ -29,6 +31,7 @@ func ListBusinessEntityTransfersUpdatedSince(site string, updatedSince *time.Tim
 	}, ListBusinessEntityTransfersPageSortBy)
 }
 
+
 func ListCurrencies(site string) ([]Currency, error) {
 	return ListAll(site, DefaultSortBy(), ListCurrenciesPageSortBy)
 }
@@ -49,6 +52,7 @@ func ListCurrenciesUpdatedSince(site string, updatedSince *time.Time) ([]Currenc
 		UpdatedAfter: true,
 	}, ListCurrenciesPageSortBy)
 }
+
 
 func ListCustomerContacts(site, id string) ([]Contact, error) {
 	return ListAllOfId(site, id, DefaultSortBy(), ListCustomerContactsPageSortBy)
@@ -71,6 +75,7 @@ func ListCustomerContactsUpdatedSince(site, id string, updatedSince *time.Time) 
 	}, ListCustomerContactsPageSortBy)
 }
 
+
 func ListCustomerHierarchies(site, id string) ([]Hierarchy, error) {
 	return ListAllOfId(site, id, DefaultSortBy(), ListCustomerHierarchiesPageSortBy)
 }
@@ -91,6 +96,7 @@ func ListCustomerHierarchiesUpdatedSince(site, id string, updatedSince *time.Tim
 		UpdatedAfter: true,
 	}, ListCustomerHierarchiesPageSortBy)
 }
+
 
 func ListCustomerPaymentVouchers(site, id string) ([]PaymentVoucher, error) {
 	return ListAllOfId(site, id, DefaultSortBy(), ListCustomerPaymentVouchersPageSortBy)
@@ -113,6 +119,7 @@ func ListCustomerPaymentVouchersUpdatedSince(site, id string, updatedSince *time
 	}, ListCustomerPaymentVouchersPageSortBy)
 }
 
+
 func ListCustomers(site string) ([]Customer, error) {
 	return ListAll(site, DefaultSortBy(), ListCustomersPageSortBy)
 }
@@ -133,6 +140,7 @@ func ListCustomersUpdatedSince(site string, updatedSince *time.Time) ([]Customer
 		UpdatedAfter: true,
 	}, ListCustomersPageSortBy)
 }
+
 
 func ListEntitlements(site string) ([]Entitlement, error) {
 	return ListAll(site, DefaultSortBy(), ListEntitlementsPageSortBy)
@@ -155,6 +163,7 @@ func ListEntitlementsUpdatedSince(site string, updatedSince *time.Time) ([]Entit
 	}, ListEntitlementsPageSortBy)
 }
 
+
 func ListEvents(site string) ([]Event, error) {
 	return ListAll(site, DefaultSortBy(), ListEventsPageSortBy)
 }
@@ -175,6 +184,7 @@ func ListEventsUpdatedSince(site string, updatedSince *time.Time) ([]Event, erro
 		UpdatedAfter: true,
 	}, ListEventsPageSortBy)
 }
+
 
 func ListFeatures(site string) ([]Feature, error) {
 	return ListAll(site, DefaultSortBy(), ListFeaturesPageSortBy)
@@ -197,6 +207,7 @@ func ListFeaturesUpdatedSince(site string, updatedSince *time.Time) ([]Feature, 
 	}, ListFeaturesPageSortBy)
 }
 
+
 func ListCreditNotes(site string) ([]CreditNote, error) {
 	return ListAll(site, DefaultSortBy(), ListCreditNotesPageSortBy)
 }
@@ -217,6 +228,7 @@ func ListCreditNotesUpdatedSince(site string, updatedSince *time.Time) ([]Credit
 		UpdatedAfter: true,
 	}, ListCreditNotesPageSortBy)
 }
+
 
 func ListPaymentReferenceNumbers(site, id string) ([]PaymentReferenceNumber, error) {
 	return ListAllOfId(site, id, DefaultSortBy(), ListPaymentReferenceNumbersPageSortBy)
@@ -239,6 +251,7 @@ func ListPaymentReferenceNumbersUpdatedSince(site, id string, updatedSince *time
 	}, ListPaymentReferenceNumbersPageSortBy)
 }
 
+
 func ListInvoicePayments(site, id string) ([]Transaction, error) {
 	return ListAllOfId(site, id, DefaultSortBy(), ListInvoicePaymentsPageSortBy)
 }
@@ -259,6 +272,7 @@ func ListInvoicePaymentsUpdatedSince(site, id string, updatedSince *time.Time) (
 		UpdatedAfter: true,
 	}, ListInvoicePaymentsPageSortBy)
 }
+
 
 func ListPromotionalCredits(site string) ([]PromotionalCredit, error) {
 	return ListAll(site, DefaultSortBy(), ListPromotionalCreditsPageSortBy)
@@ -281,6 +295,7 @@ func ListPromotionalCreditsUpdatedSince(site string, updatedSince *time.Time) ([
 	}, ListPromotionalCreditsPageSortBy)
 }
 
+
 func ListInvoiceUnbilledCharges(site string) ([]InvoiceUnbilledCharge, error) {
 	return ListAll(site, DefaultSortBy(), ListInvoiceUnbilledChargesPageSortBy)
 }
@@ -301,6 +316,7 @@ func ListInvoiceUnbilledChargesUpdatedSince(site string, updatedSince *time.Time
 		UpdatedAfter: true,
 	}, ListInvoiceUnbilledChargesPageSortBy)
 }
+
 
 func ListInvoicePaymentVouchers(site, id string) ([]PaymentVoucher, error) {
 	return ListAllOfId(site, id, DefaultSortBy(), ListInvoicePaymentVouchersPageSortBy)
@@ -323,6 +339,7 @@ func ListInvoicePaymentVouchersUpdatedSince(site, id string, updatedSince *time.
 	}, ListInvoicePaymentVouchersPageSortBy)
 }
 
+
 func ListInvoices(site string) ([]Invoice, error) {
 	return ListAll(site, DefaultSortBy(), ListInvoicesPageSortBy)
 }
@@ -343,6 +360,7 @@ func ListInvoicesUpdatedSince(site string, updatedSince *time.Time) ([]Invoice, 
 		UpdatedAfter: true,
 	}, ListInvoicesPageSortBy)
 }
+
 
 func ListItemsAttached(site, id string) ([]ItemAttached, error) {
 	return ListAllOfId(site, id, DefaultSortBy(), ListItemsAttachedPageSortBy)
@@ -365,6 +383,7 @@ func ListItemsAttachedUpdatedSince(site, id string, updatedSince *time.Time) ([]
 	}, ListItemsAttachedPageSortBy)
 }
 
+
 func ListCouponCodes(site string) ([]CouponCode, error) {
 	return ListAll(site, DefaultSortBy(), ListCouponCodesPageSortBy)
 }
@@ -385,6 +404,7 @@ func ListCouponCodesUpdatedSince(site string, updatedSince *time.Time) ([]Coupon
 		UpdatedAfter: true,
 	}, ListCouponCodesPageSortBy)
 }
+
 
 func ListCouponSets(site string) ([]CouponSet, error) {
 	return ListAll(site, DefaultSortBy(), ListCouponSetsPageSortBy)
@@ -407,6 +427,7 @@ func ListCouponSetsUpdatedSince(site string, updatedSince *time.Time) ([]CouponS
 	}, ListCouponSetsPageSortBy)
 }
 
+
 func ListCoupons(site string) ([]Coupon, error) {
 	return ListAll(site, DefaultSortBy(), ListCouponsPageSortBy)
 }
@@ -427,6 +448,7 @@ func ListCouponsUpdatedSince(site string, updatedSince *time.Time) ([]Coupon, er
 		UpdatedAfter: true,
 	}, ListCouponsPageSortBy)
 }
+
 
 func ListDifferentialPrices(site string) ([]DifferentialPrice, error) {
 	return ListAll(site, DefaultSortBy(), ListDifferentialPricesPageSortBy)
@@ -449,6 +471,7 @@ func ListDifferentialPricesUpdatedSince(site string, updatedSince *time.Time) ([
 	}, ListDifferentialPricesPageSortBy)
 }
 
+
 func ListItemFamilies(site string) ([]ItemFamily, error) {
 	return ListAll(site, DefaultSortBy(), ListItemFamiliesPageSortBy)
 }
@@ -469,6 +492,7 @@ func ListItemFamiliesUpdatedSince(site string, updatedSince *time.Time) ([]ItemF
 		UpdatedAfter: true,
 	}, ListItemFamiliesPageSortBy)
 }
+
 
 func ListItemPrices(site string) ([]ItemPrice, error) {
 	return ListAll(site, DefaultSortBy(), ListItemPricesPageSortBy)
@@ -491,6 +515,7 @@ func ListItemPricesUpdatedSince(site string, updatedSince *time.Time) ([]ItemPri
 	}, ListItemPricesPageSortBy)
 }
 
+
 func ListItems(site string) ([]Item, error) {
 	return ListAll(site, DefaultSortBy(), ListItemsPageSortBy)
 }
@@ -511,6 +536,7 @@ func ListItemsUpdatedSince(site string, updatedSince *time.Time) ([]Item, error)
 		UpdatedAfter: true,
 	}, ListItemsPageSortBy)
 }
+
 
 func ListOrders(site string) ([]Order, error) {
 	return ListAll(site, DefaultSortBy(), ListOrdersPageSortBy)
@@ -533,6 +559,7 @@ func ListOrdersUpdatedSince(site string, updatedSince *time.Time) ([]Order, erro
 	}, ListOrdersPageSortBy)
 }
 
+
 func ListPaymentSources(site string) ([]PaymentSource, error) {
 	return ListAll(site, DefaultSortBy(), ListPaymentSourcesPageSortBy)
 }
@@ -553,6 +580,7 @@ func ListPaymentSourcesUpdatedSince(site string, updatedSince *time.Time) ([]Pay
 		UpdatedAfter: true,
 	}, ListPaymentSourcesPageSortBy)
 }
+
 
 func ListVirtualBankAccounts(site string) ([]VirtualBankAccount, error) {
 	return ListAll(site, DefaultSortBy(), ListVirtualBankAccountsPageSortBy)
@@ -575,6 +603,7 @@ func ListVirtualBankAccountsUpdatedSince(site string, updatedSince *time.Time) (
 	}, ListVirtualBankAccountsPageSortBy)
 }
 
+
 func ListTransactions(site string) ([]Transaction, error) {
 	return ListAll(site, DefaultSortBy(), ListTransactionsPageSortBy)
 }
@@ -595,6 +624,7 @@ func ListTransactionsUpdatedSince(site string, updatedSince *time.Time) ([]Trans
 		UpdatedAfter: true,
 	}, ListTransactionsPageSortBy)
 }
+
 
 func ListQuoteLineGroups(site, id string) ([]QuoteLineGroup, error) {
 	return ListAllOfId(site, id, DefaultSortBy(), ListQuoteLineGroupsPageSortBy)
@@ -617,6 +647,7 @@ func ListQuoteLineGroupsUpdatedSince(site, id string, updatedSince *time.Time) (
 	}, ListQuoteLineGroupsPageSortBy)
 }
 
+
 func ListQuotes(site string) ([]Quote, error) {
 	return ListAll(site, DefaultSortBy(), ListQuotesPageSortBy)
 }
@@ -637,6 +668,7 @@ func ListQuotesUpdatedSince(site string, updatedSince *time.Time) ([]Quote, erro
 		UpdatedAfter: true,
 	}, ListQuotesPageSortBy)
 }
+
 
 func ListContractTerms(site, id string) ([]ContractTerm, error) {
 	return ListAllOfId(site, id, DefaultSortBy(), ListContractTermsPageSortBy)
@@ -659,6 +691,7 @@ func ListContractTermsUpdatedSince(site, id string, updatedSince *time.Time) ([]
 	}, ListContractTermsPageSortBy)
 }
 
+
 func ListDiscounts(site, id string) ([]Discount, error) {
 	return ListAllOfId(site, id, DefaultSortBy(), ListDiscountsPageSortBy)
 }
@@ -679,6 +712,7 @@ func ListDiscountsUpdatedSince(site, id string, updatedSince *time.Time) ([]Disc
 		UpdatedAfter: true,
 	}, ListDiscountsPageSortBy)
 }
+
 
 func ListSubscriptionEntitlements(site, id string) ([]SubscriptionEntitlement, error) {
 	return ListAllOfId(site, id, DefaultSortBy(), ListSubscriptionEntitlementsPageSortBy)
@@ -701,6 +735,7 @@ func ListSubscriptionEntitlementsUpdatedSince(site, id string, updatedSince *tim
 	}, ListSubscriptionEntitlementsPageSortBy)
 }
 
+
 func ListGifts(site string) ([]Gift, error) {
 	return ListAll(site, DefaultSortBy(), ListGiftsPageSortBy)
 }
@@ -721,6 +756,7 @@ func ListGiftsUpdatedSince(site string, updatedSince *time.Time) ([]Gift, error)
 		UpdatedAfter: true,
 	}, ListGiftsPageSortBy)
 }
+
 
 func ListAdvancedInvoiceSchedules(site, id string) ([]AdvancedInvoiceSchedule, error) {
 	return ListAllOfId(site, id, DefaultSortBy(), ListAdvancedInvoiceSchedulesPageSortBy)
@@ -743,6 +779,7 @@ func ListAdvancedInvoiceSchedulesUpdatedSince(site, id string, updatedSince *tim
 	}, ListAdvancedInvoiceSchedulesPageSortBy)
 }
 
+
 func ListRamps(site string) ([]Ramp, error) {
 	return ListAll(site, DefaultSortBy(), ListRampsPageSortBy)
 }
@@ -764,6 +801,7 @@ func ListRampsUpdatedSince(site string, updatedSince *time.Time) ([]Ramp, error)
 	}, ListRampsPageSortBy)
 }
 
+
 func ListUsages(site string) ([]Usage, error) {
 	return ListAll(site, DefaultSortBy(), ListUsagesPageSortBy)
 }
@@ -784,6 +822,7 @@ func ListUsagesUpdatedSince(site string, updatedSince *time.Time) ([]Usage, erro
 		UpdatedAfter: true,
 	}, ListUsagesPageSortBy)
 }
+
 
 func ListSubscriptions(site string) ([]Subscription, error) {
 	return ListAll(site, DefaultSortBy(), ListSubscriptionsPageSortBy)

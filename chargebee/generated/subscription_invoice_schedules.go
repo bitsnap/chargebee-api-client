@@ -3,20 +3,19 @@ package chargebee
 // THIS IS GENERATED CODE. DO NOT EDIT.
 
 import (
-	"net/url"
-
 	. "github.com/bitsnap/chargebee-api-client/chargebee/client"
 	"github.com/bitsnap/chargebee-api-client/chargebee/enums"
 	"github.com/bitsnap/chargebee-api-client/chargebee/models"
 	"github.com/goccy/go-json"
 	"github.com/gofiber/fiber/v2"
+	"net/url"
 )
 
 type AdvancedInvoiceSchedule struct {
-	Id                    string                       `json:"id" validate:"required"`
-	ScheduleType          enums.ScheduleTypeEnum       `json:"schedule_type"`
-	FixedIntervalSchedule models.FixedIntervalSchedule `json:"fixed_interval_schedule"`
-	SpecificDatesSchedule models.SpecificDatesSchedule `json:"specific_dates_schedule"`
+    Id string `json:"id" validate:"required"`
+    ScheduleType enums.ScheduleTypeEnum `json:"schedule_type"`
+    FixedIntervalSchedule models.FixedIntervalSchedule `json:"fixed_interval_schedule"`
+    SpecificDatesSchedule models.SpecificDatesSchedule `json:"specific_dates_schedule"`
 }
 
 func ListAdvancedInvoiceSchedulesPageSortBy(site string, id string, offset string, sortBy *SortBy) ([]AdvancedInvoiceSchedule, string, error) {
@@ -27,43 +26,43 @@ func ListAdvancedInvoiceSchedulesPageSortBy(site string, id string, offset strin
 	if err != nil {
 		return nil, "", err
 	}
-
-	content, err := GetQuery(client, parsedUrl, offset, sortBy)
-	if err != nil {
-		return nil, "", err
-	}
-
+		
+    content, err := GetQuery(client, parsedUrl, offset, sortBy)
+    if err != nil {
+        return nil, "", err
+    }
+    	
 	type AdvancedInvoiceScheduleListItem struct {
 		AdvancedInvoiceSchedule AdvancedInvoiceSchedule `json:"AdvancedInvoiceSchedule"`
 	}
 
-	type AdvancedInvoiceSchedulePage struct {
-		List       []AdvancedInvoiceScheduleListItem `json:"list"`
-		NextOffset string                            `json:"next_offset,omitempty"`
-	}
+    type AdvancedInvoiceSchedulePage struct {
+        List       []AdvancedInvoiceScheduleListItem `json:"list"`
+        NextOffset string `json:"next_offset,omitempty"`
+    }
 
 	entries := AdvancedInvoiceSchedulePage{
-		List: make([]AdvancedInvoiceScheduleListItem, 0, 10),
+		List:       make([]AdvancedInvoiceScheduleListItem, 0, 10),
 	}
 
 	err = json.Unmarshal(content, &entries)
 	if err != nil {
 		return nil, "", err
 	}
-
+	
 	if len(entries.List) == 0 {
-		return []AdvancedInvoiceSchedule{}, "", nil
-	}
-
+        return []AdvancedInvoiceSchedule{}, "", nil
+    }
+	
 	result := make([]AdvancedInvoiceSchedule, 0, len(entries.List))
 	for _, r := range entries.List {
 		result = append(result, r.AdvancedInvoiceSchedule)
 	}
 
-	if len(entries.NextOffset) > 0 {
-		return ResultWithOffset(result, offset, entries.NextOffset)
-	}
-
+    if len(entries.NextOffset) > 0 {
+        return ResultWithOffset(result, offset, entries.NextOffset)
+    }
+	
 	return result, "", nil
 }
 

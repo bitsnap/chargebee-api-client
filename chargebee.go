@@ -3,10 +3,10 @@ package chargebee
 // THIS IS GENERATED CODE. DO NOT EDIT.
 
 import (
-	"time"
+    "time"
 
 	"github.com/bitsnap/chargebee-api-client/chargebee/client"
-	chargebee "github.com/bitsnap/chargebee-api-client/chargebee/generated"
+	"github.com/bitsnap/chargebee-api-client/chargebee/generated"
 )
 
 // UseSite sets custom Chargebee site name overriding CHARGEBEE_SITE environment variable value
@@ -30,19 +30,19 @@ func ListAllSiteBusinessEntityTransfers(site string) ([]chargebee.BusinessEntity
 }
 
 func ListBusinessEntityTransfersCreatedSince(createdSince *time.Time) ([]chargebee.BusinessEntityTransfer, error) {
-	return ListSiteBusinessEntityTransfersCreatedSince(client.Site(), createdSince)
+    return ListSiteBusinessEntityTransfersCreatedSince(client.Site(), createdSince)
 }
 
 func ListSiteBusinessEntityTransfersCreatedSince(site string, createdSince *time.Time) ([]chargebee.BusinessEntityTransfer, error) {
-	return chargebee.ListBusinessEntityTransfersCreatedSince(site, createdSince)
+    return chargebee.ListBusinessEntityTransfersCreatedSince(site, createdSince)
 }
 
-func ListBusinessEntityTransfersUpdatedSince(site string, updatedSince *time.Time) ([]chargebee.BusinessEntityTransfer, error) {
-	return ListSiteBusinessEntityTransfersUpdatedSince(client.Site(), updatedSince)
+func ListBusinessEntityTransfersUpdatedSince(updatedSince *time.Time) ([]chargebee.BusinessEntityTransfer, error) {
+    return ListSiteBusinessEntityTransfersUpdatedSince(client.Site(), updatedSince)
 }
 
 func ListSiteBusinessEntityTransfersUpdatedSince(site string, updatedSince *time.Time) ([]chargebee.BusinessEntityTransfer, error) {
-	return chargebee.ListBusinessEntityTransfersUpdatedSince(site, updatedSince)
+    return chargebee.ListBusinessEntityTransfersUpdatedSince(site, updatedSince)
 }
 
 func ListBusinessEntityTransfers() ([]chargebee.BusinessEntityTransfer, string, error) {
@@ -82,19 +82,19 @@ func ListAllSiteCurrencies(site string) ([]chargebee.Currency, error) {
 }
 
 func ListCurrenciesCreatedSince(createdSince *time.Time) ([]chargebee.Currency, error) {
-	return ListSiteCurrenciesCreatedSince(client.Site(), createdSince)
+    return ListSiteCurrenciesCreatedSince(client.Site(), createdSince)
 }
 
 func ListSiteCurrenciesCreatedSince(site string, createdSince *time.Time) ([]chargebee.Currency, error) {
-	return chargebee.ListCurrenciesCreatedSince(site, createdSince)
+    return chargebee.ListCurrenciesCreatedSince(site, createdSince)
 }
 
-func ListCurrenciesUpdatedSince(site string, updatedSince *time.Time) ([]chargebee.Currency, error) {
-	return ListSiteCurrenciesUpdatedSince(client.Site(), updatedSince)
+func ListCurrenciesUpdatedSince(updatedSince *time.Time) ([]chargebee.Currency, error) {
+    return ListSiteCurrenciesUpdatedSince(client.Site(), updatedSince)
 }
 
 func ListSiteCurrenciesUpdatedSince(site string, updatedSince *time.Time) ([]chargebee.Currency, error) {
-	return chargebee.ListCurrenciesUpdatedSince(site, updatedSince)
+    return chargebee.ListCurrenciesUpdatedSince(site, updatedSince)
 }
 
 func ListCurrencies() ([]chargebee.Currency, string, error) {
@@ -142,19 +142,19 @@ func ListAllSiteCustomerContacts(site, id string) ([]chargebee.Contact, error) {
 }
 
 func ListCustomerContactsCreatedSince(id string, createdSince *time.Time) ([]chargebee.Contact, error) {
-	return ListSiteCustomerContactsCreatedSince(client.Site(), id, createdSince)
+    return ListSiteCustomerContactsCreatedSince(client.Site(), id, createdSince)
 }
 
 func ListSiteCustomerContactsCreatedSince(site, id string, createdSince *time.Time) ([]chargebee.Contact, error) {
-	return chargebee.ListCustomerContactsCreatedSince(site, id, createdSince)
+    return chargebee.ListCustomerContactsCreatedSince(site, id, createdSince)
 }
 
-func ListCustomerContactsUpdatedSince(site, id string, updatedSince *time.Time) ([]chargebee.Contact, error) {
-	return ListSiteCustomerContactsUpdatedSince(client.Site(), id, updatedSince)
+func ListCustomerContactsUpdatedSince(id string, updatedSince *time.Time) ([]chargebee.Contact, error) {
+    return ListSiteCustomerContactsUpdatedSince(client.Site(), id, updatedSince)
 }
 
 func ListSiteCustomerContactsUpdatedSince(site, id string, updatedSince *time.Time) ([]chargebee.Contact, error) {
-	return chargebee.ListCustomerContactsUpdatedSince(site, id, updatedSince)
+    return chargebee.ListCustomerContactsUpdatedSince(site, id, updatedSince)
 }
 
 func ListCustomerContacts(id string) ([]chargebee.Contact, string, error) {
@@ -194,19 +194,19 @@ func ListAllSiteCustomerHierarchies(site, id string) ([]chargebee.Hierarchy, err
 }
 
 func ListCustomerHierarchiesCreatedSince(id string, createdSince *time.Time) ([]chargebee.Hierarchy, error) {
-	return ListSiteCustomerHierarchiesCreatedSince(client.Site(), id, createdSince)
+    return ListSiteCustomerHierarchiesCreatedSince(client.Site(), id, createdSince)
 }
 
 func ListSiteCustomerHierarchiesCreatedSince(site, id string, createdSince *time.Time) ([]chargebee.Hierarchy, error) {
-	return chargebee.ListCustomerHierarchiesCreatedSince(site, id, createdSince)
+    return chargebee.ListCustomerHierarchiesCreatedSince(site, id, createdSince)
 }
 
-func ListCustomerHierarchiesUpdatedSince(site, id string, updatedSince *time.Time) ([]chargebee.Hierarchy, error) {
-	return ListSiteCustomerHierarchiesUpdatedSince(client.Site(), id, updatedSince)
+func ListCustomerHierarchiesUpdatedSince(id string, updatedSince *time.Time) ([]chargebee.Hierarchy, error) {
+    return ListSiteCustomerHierarchiesUpdatedSince(client.Site(), id, updatedSince)
 }
 
 func ListSiteCustomerHierarchiesUpdatedSince(site, id string, updatedSince *time.Time) ([]chargebee.Hierarchy, error) {
-	return chargebee.ListCustomerHierarchiesUpdatedSince(site, id, updatedSince)
+    return chargebee.ListCustomerHierarchiesUpdatedSince(site, id, updatedSince)
 }
 
 func ListCustomerHierarchies(id string) ([]chargebee.Hierarchy, string, error) {
@@ -246,19 +246,19 @@ func ListAllSiteCustomerPaymentVouchers(site, id string) ([]chargebee.PaymentVou
 }
 
 func ListCustomerPaymentVouchersCreatedSince(id string, createdSince *time.Time) ([]chargebee.PaymentVoucher, error) {
-	return ListSiteCustomerPaymentVouchersCreatedSince(client.Site(), id, createdSince)
+    return ListSiteCustomerPaymentVouchersCreatedSince(client.Site(), id, createdSince)
 }
 
 func ListSiteCustomerPaymentVouchersCreatedSince(site, id string, createdSince *time.Time) ([]chargebee.PaymentVoucher, error) {
-	return chargebee.ListCustomerPaymentVouchersCreatedSince(site, id, createdSince)
+    return chargebee.ListCustomerPaymentVouchersCreatedSince(site, id, createdSince)
 }
 
-func ListCustomerPaymentVouchersUpdatedSince(site, id string, updatedSince *time.Time) ([]chargebee.PaymentVoucher, error) {
-	return ListSiteCustomerPaymentVouchersUpdatedSince(client.Site(), id, updatedSince)
+func ListCustomerPaymentVouchersUpdatedSince(id string, updatedSince *time.Time) ([]chargebee.PaymentVoucher, error) {
+    return ListSiteCustomerPaymentVouchersUpdatedSince(client.Site(), id, updatedSince)
 }
 
 func ListSiteCustomerPaymentVouchersUpdatedSince(site, id string, updatedSince *time.Time) ([]chargebee.PaymentVoucher, error) {
-	return chargebee.ListCustomerPaymentVouchersUpdatedSince(site, id, updatedSince)
+    return chargebee.ListCustomerPaymentVouchersUpdatedSince(site, id, updatedSince)
 }
 
 func ListCustomerPaymentVouchers(id string) ([]chargebee.PaymentVoucher, string, error) {
@@ -298,19 +298,19 @@ func ListAllSiteCustomers(site string) ([]chargebee.Customer, error) {
 }
 
 func ListCustomersCreatedSince(createdSince *time.Time) ([]chargebee.Customer, error) {
-	return ListSiteCustomersCreatedSince(client.Site(), createdSince)
+    return ListSiteCustomersCreatedSince(client.Site(), createdSince)
 }
 
 func ListSiteCustomersCreatedSince(site string, createdSince *time.Time) ([]chargebee.Customer, error) {
-	return chargebee.ListCustomersCreatedSince(site, createdSince)
+    return chargebee.ListCustomersCreatedSince(site, createdSince)
 }
 
-func ListCustomersUpdatedSince(site string, updatedSince *time.Time) ([]chargebee.Customer, error) {
-	return ListSiteCustomersUpdatedSince(client.Site(), updatedSince)
+func ListCustomersUpdatedSince(updatedSince *time.Time) ([]chargebee.Customer, error) {
+    return ListSiteCustomersUpdatedSince(client.Site(), updatedSince)
 }
 
 func ListSiteCustomersUpdatedSince(site string, updatedSince *time.Time) ([]chargebee.Customer, error) {
-	return chargebee.ListCustomersUpdatedSince(site, updatedSince)
+    return chargebee.ListCustomersUpdatedSince(site, updatedSince)
 }
 
 func ListCustomers() ([]chargebee.Customer, string, error) {
@@ -358,19 +358,19 @@ func ListAllSiteEntitlements(site string) ([]chargebee.Entitlement, error) {
 }
 
 func ListEntitlementsCreatedSince(createdSince *time.Time) ([]chargebee.Entitlement, error) {
-	return ListSiteEntitlementsCreatedSince(client.Site(), createdSince)
+    return ListSiteEntitlementsCreatedSince(client.Site(), createdSince)
 }
 
 func ListSiteEntitlementsCreatedSince(site string, createdSince *time.Time) ([]chargebee.Entitlement, error) {
-	return chargebee.ListEntitlementsCreatedSince(site, createdSince)
+    return chargebee.ListEntitlementsCreatedSince(site, createdSince)
 }
 
-func ListEntitlementsUpdatedSince(site string, updatedSince *time.Time) ([]chargebee.Entitlement, error) {
-	return ListSiteEntitlementsUpdatedSince(client.Site(), updatedSince)
+func ListEntitlementsUpdatedSince(updatedSince *time.Time) ([]chargebee.Entitlement, error) {
+    return ListSiteEntitlementsUpdatedSince(client.Site(), updatedSince)
 }
 
 func ListSiteEntitlementsUpdatedSince(site string, updatedSince *time.Time) ([]chargebee.Entitlement, error) {
-	return chargebee.ListEntitlementsUpdatedSince(site, updatedSince)
+    return chargebee.ListEntitlementsUpdatedSince(site, updatedSince)
 }
 
 func ListEntitlements() ([]chargebee.Entitlement, string, error) {
@@ -410,19 +410,19 @@ func ListAllSiteEvents(site string) ([]chargebee.Event, error) {
 }
 
 func ListEventsCreatedSince(createdSince *time.Time) ([]chargebee.Event, error) {
-	return ListSiteEventsCreatedSince(client.Site(), createdSince)
+    return ListSiteEventsCreatedSince(client.Site(), createdSince)
 }
 
 func ListSiteEventsCreatedSince(site string, createdSince *time.Time) ([]chargebee.Event, error) {
-	return chargebee.ListEventsCreatedSince(site, createdSince)
+    return chargebee.ListEventsCreatedSince(site, createdSince)
 }
 
-func ListEventsUpdatedSince(site string, updatedSince *time.Time) ([]chargebee.Event, error) {
-	return ListSiteEventsUpdatedSince(client.Site(), updatedSince)
+func ListEventsUpdatedSince(updatedSince *time.Time) ([]chargebee.Event, error) {
+    return ListSiteEventsUpdatedSince(client.Site(), updatedSince)
 }
 
 func ListSiteEventsUpdatedSince(site string, updatedSince *time.Time) ([]chargebee.Event, error) {
-	return chargebee.ListEventsUpdatedSince(site, updatedSince)
+    return chargebee.ListEventsUpdatedSince(site, updatedSince)
 }
 
 func ListEvents() ([]chargebee.Event, string, error) {
@@ -470,19 +470,19 @@ func ListAllSiteFeatures(site string) ([]chargebee.Feature, error) {
 }
 
 func ListFeaturesCreatedSince(createdSince *time.Time) ([]chargebee.Feature, error) {
-	return ListSiteFeaturesCreatedSince(client.Site(), createdSince)
+    return ListSiteFeaturesCreatedSince(client.Site(), createdSince)
 }
 
 func ListSiteFeaturesCreatedSince(site string, createdSince *time.Time) ([]chargebee.Feature, error) {
-	return chargebee.ListFeaturesCreatedSince(site, createdSince)
+    return chargebee.ListFeaturesCreatedSince(site, createdSince)
 }
 
-func ListFeaturesUpdatedSince(site string, updatedSince *time.Time) ([]chargebee.Feature, error) {
-	return ListSiteFeaturesUpdatedSince(client.Site(), updatedSince)
+func ListFeaturesUpdatedSince(updatedSince *time.Time) ([]chargebee.Feature, error) {
+    return ListSiteFeaturesUpdatedSince(client.Site(), updatedSince)
 }
 
 func ListSiteFeaturesUpdatedSince(site string, updatedSince *time.Time) ([]chargebee.Feature, error) {
-	return chargebee.ListFeaturesUpdatedSince(site, updatedSince)
+    return chargebee.ListFeaturesUpdatedSince(site, updatedSince)
 }
 
 func ListFeatures() ([]chargebee.Feature, string, error) {
@@ -530,19 +530,19 @@ func ListAllSiteCreditNotes(site string) ([]chargebee.CreditNote, error) {
 }
 
 func ListCreditNotesCreatedSince(createdSince *time.Time) ([]chargebee.CreditNote, error) {
-	return ListSiteCreditNotesCreatedSince(client.Site(), createdSince)
+    return ListSiteCreditNotesCreatedSince(client.Site(), createdSince)
 }
 
 func ListSiteCreditNotesCreatedSince(site string, createdSince *time.Time) ([]chargebee.CreditNote, error) {
-	return chargebee.ListCreditNotesCreatedSince(site, createdSince)
+    return chargebee.ListCreditNotesCreatedSince(site, createdSince)
 }
 
-func ListCreditNotesUpdatedSince(site string, updatedSince *time.Time) ([]chargebee.CreditNote, error) {
-	return ListSiteCreditNotesUpdatedSince(client.Site(), updatedSince)
+func ListCreditNotesUpdatedSince(updatedSince *time.Time) ([]chargebee.CreditNote, error) {
+    return ListSiteCreditNotesUpdatedSince(client.Site(), updatedSince)
 }
 
 func ListSiteCreditNotesUpdatedSince(site string, updatedSince *time.Time) ([]chargebee.CreditNote, error) {
-	return chargebee.ListCreditNotesUpdatedSince(site, updatedSince)
+    return chargebee.ListCreditNotesUpdatedSince(site, updatedSince)
 }
 
 func ListCreditNotes() ([]chargebee.CreditNote, string, error) {
@@ -590,19 +590,19 @@ func ListAllSitePaymentReferenceNumbers(site, id string) ([]chargebee.PaymentRef
 }
 
 func ListPaymentReferenceNumbersCreatedSince(id string, createdSince *time.Time) ([]chargebee.PaymentReferenceNumber, error) {
-	return ListSitePaymentReferenceNumbersCreatedSince(client.Site(), id, createdSince)
+    return ListSitePaymentReferenceNumbersCreatedSince(client.Site(), id, createdSince)
 }
 
 func ListSitePaymentReferenceNumbersCreatedSince(site, id string, createdSince *time.Time) ([]chargebee.PaymentReferenceNumber, error) {
-	return chargebee.ListPaymentReferenceNumbersCreatedSince(site, id, createdSince)
+    return chargebee.ListPaymentReferenceNumbersCreatedSince(site, id, createdSince)
 }
 
-func ListPaymentReferenceNumbersUpdatedSince(site, id string, updatedSince *time.Time) ([]chargebee.PaymentReferenceNumber, error) {
-	return ListSitePaymentReferenceNumbersUpdatedSince(client.Site(), id, updatedSince)
+func ListPaymentReferenceNumbersUpdatedSince(id string, updatedSince *time.Time) ([]chargebee.PaymentReferenceNumber, error) {
+    return ListSitePaymentReferenceNumbersUpdatedSince(client.Site(), id, updatedSince)
 }
 
 func ListSitePaymentReferenceNumbersUpdatedSince(site, id string, updatedSince *time.Time) ([]chargebee.PaymentReferenceNumber, error) {
-	return chargebee.ListPaymentReferenceNumbersUpdatedSince(site, id, updatedSince)
+    return chargebee.ListPaymentReferenceNumbersUpdatedSince(site, id, updatedSince)
 }
 
 func ListPaymentReferenceNumbers(id string) ([]chargebee.PaymentReferenceNumber, string, error) {
@@ -642,19 +642,19 @@ func ListAllSiteInvoicePayments(site, id string) ([]chargebee.Transaction, error
 }
 
 func ListInvoicePaymentsCreatedSince(id string, createdSince *time.Time) ([]chargebee.Transaction, error) {
-	return ListSiteInvoicePaymentsCreatedSince(client.Site(), id, createdSince)
+    return ListSiteInvoicePaymentsCreatedSince(client.Site(), id, createdSince)
 }
 
 func ListSiteInvoicePaymentsCreatedSince(site, id string, createdSince *time.Time) ([]chargebee.Transaction, error) {
-	return chargebee.ListInvoicePaymentsCreatedSince(site, id, createdSince)
+    return chargebee.ListInvoicePaymentsCreatedSince(site, id, createdSince)
 }
 
-func ListInvoicePaymentsUpdatedSince(site, id string, updatedSince *time.Time) ([]chargebee.Transaction, error) {
-	return ListSiteInvoicePaymentsUpdatedSince(client.Site(), id, updatedSince)
+func ListInvoicePaymentsUpdatedSince(id string, updatedSince *time.Time) ([]chargebee.Transaction, error) {
+    return ListSiteInvoicePaymentsUpdatedSince(client.Site(), id, updatedSince)
 }
 
 func ListSiteInvoicePaymentsUpdatedSince(site, id string, updatedSince *time.Time) ([]chargebee.Transaction, error) {
-	return chargebee.ListInvoicePaymentsUpdatedSince(site, id, updatedSince)
+    return chargebee.ListInvoicePaymentsUpdatedSince(site, id, updatedSince)
 }
 
 func ListInvoicePayments(id string) ([]chargebee.Transaction, string, error) {
@@ -694,19 +694,19 @@ func ListAllSitePromotionalCredits(site string) ([]chargebee.PromotionalCredit, 
 }
 
 func ListPromotionalCreditsCreatedSince(createdSince *time.Time) ([]chargebee.PromotionalCredit, error) {
-	return ListSitePromotionalCreditsCreatedSince(client.Site(), createdSince)
+    return ListSitePromotionalCreditsCreatedSince(client.Site(), createdSince)
 }
 
 func ListSitePromotionalCreditsCreatedSince(site string, createdSince *time.Time) ([]chargebee.PromotionalCredit, error) {
-	return chargebee.ListPromotionalCreditsCreatedSince(site, createdSince)
+    return chargebee.ListPromotionalCreditsCreatedSince(site, createdSince)
 }
 
-func ListPromotionalCreditsUpdatedSince(site string, updatedSince *time.Time) ([]chargebee.PromotionalCredit, error) {
-	return ListSitePromotionalCreditsUpdatedSince(client.Site(), updatedSince)
+func ListPromotionalCreditsUpdatedSince(updatedSince *time.Time) ([]chargebee.PromotionalCredit, error) {
+    return ListSitePromotionalCreditsUpdatedSince(client.Site(), updatedSince)
 }
 
 func ListSitePromotionalCreditsUpdatedSince(site string, updatedSince *time.Time) ([]chargebee.PromotionalCredit, error) {
-	return chargebee.ListPromotionalCreditsUpdatedSince(site, updatedSince)
+    return chargebee.ListPromotionalCreditsUpdatedSince(site, updatedSince)
 }
 
 func ListPromotionalCredits() ([]chargebee.PromotionalCredit, string, error) {
@@ -754,19 +754,19 @@ func ListAllSiteInvoiceUnbilledCharges(site string) ([]chargebee.InvoiceUnbilled
 }
 
 func ListInvoiceUnbilledChargesCreatedSince(createdSince *time.Time) ([]chargebee.InvoiceUnbilledCharge, error) {
-	return ListSiteInvoiceUnbilledChargesCreatedSince(client.Site(), createdSince)
+    return ListSiteInvoiceUnbilledChargesCreatedSince(client.Site(), createdSince)
 }
 
 func ListSiteInvoiceUnbilledChargesCreatedSince(site string, createdSince *time.Time) ([]chargebee.InvoiceUnbilledCharge, error) {
-	return chargebee.ListInvoiceUnbilledChargesCreatedSince(site, createdSince)
+    return chargebee.ListInvoiceUnbilledChargesCreatedSince(site, createdSince)
 }
 
-func ListInvoiceUnbilledChargesUpdatedSince(site string, updatedSince *time.Time) ([]chargebee.InvoiceUnbilledCharge, error) {
-	return ListSiteInvoiceUnbilledChargesUpdatedSince(client.Site(), updatedSince)
+func ListInvoiceUnbilledChargesUpdatedSince(updatedSince *time.Time) ([]chargebee.InvoiceUnbilledCharge, error) {
+    return ListSiteInvoiceUnbilledChargesUpdatedSince(client.Site(), updatedSince)
 }
 
 func ListSiteInvoiceUnbilledChargesUpdatedSince(site string, updatedSince *time.Time) ([]chargebee.InvoiceUnbilledCharge, error) {
-	return chargebee.ListInvoiceUnbilledChargesUpdatedSince(site, updatedSince)
+    return chargebee.ListInvoiceUnbilledChargesUpdatedSince(site, updatedSince)
 }
 
 func ListInvoiceUnbilledCharges() ([]chargebee.InvoiceUnbilledCharge, string, error) {
@@ -806,19 +806,19 @@ func ListAllSiteInvoicePaymentVouchers(site, id string) ([]chargebee.PaymentVouc
 }
 
 func ListInvoicePaymentVouchersCreatedSince(id string, createdSince *time.Time) ([]chargebee.PaymentVoucher, error) {
-	return ListSiteInvoicePaymentVouchersCreatedSince(client.Site(), id, createdSince)
+    return ListSiteInvoicePaymentVouchersCreatedSince(client.Site(), id, createdSince)
 }
 
 func ListSiteInvoicePaymentVouchersCreatedSince(site, id string, createdSince *time.Time) ([]chargebee.PaymentVoucher, error) {
-	return chargebee.ListInvoicePaymentVouchersCreatedSince(site, id, createdSince)
+    return chargebee.ListInvoicePaymentVouchersCreatedSince(site, id, createdSince)
 }
 
-func ListInvoicePaymentVouchersUpdatedSince(site, id string, updatedSince *time.Time) ([]chargebee.PaymentVoucher, error) {
-	return ListSiteInvoicePaymentVouchersUpdatedSince(client.Site(), id, updatedSince)
+func ListInvoicePaymentVouchersUpdatedSince(id string, updatedSince *time.Time) ([]chargebee.PaymentVoucher, error) {
+    return ListSiteInvoicePaymentVouchersUpdatedSince(client.Site(), id, updatedSince)
 }
 
 func ListSiteInvoicePaymentVouchersUpdatedSince(site, id string, updatedSince *time.Time) ([]chargebee.PaymentVoucher, error) {
-	return chargebee.ListInvoicePaymentVouchersUpdatedSince(site, id, updatedSince)
+    return chargebee.ListInvoicePaymentVouchersUpdatedSince(site, id, updatedSince)
 }
 
 func ListInvoicePaymentVouchers(id string) ([]chargebee.PaymentVoucher, string, error) {
@@ -858,19 +858,19 @@ func ListAllSiteInvoices(site string) ([]chargebee.Invoice, error) {
 }
 
 func ListInvoicesCreatedSince(createdSince *time.Time) ([]chargebee.Invoice, error) {
-	return ListSiteInvoicesCreatedSince(client.Site(), createdSince)
+    return ListSiteInvoicesCreatedSince(client.Site(), createdSince)
 }
 
 func ListSiteInvoicesCreatedSince(site string, createdSince *time.Time) ([]chargebee.Invoice, error) {
-	return chargebee.ListInvoicesCreatedSince(site, createdSince)
+    return chargebee.ListInvoicesCreatedSince(site, createdSince)
 }
 
-func ListInvoicesUpdatedSince(site string, updatedSince *time.Time) ([]chargebee.Invoice, error) {
-	return ListSiteInvoicesUpdatedSince(client.Site(), updatedSince)
+func ListInvoicesUpdatedSince(updatedSince *time.Time) ([]chargebee.Invoice, error) {
+    return ListSiteInvoicesUpdatedSince(client.Site(), updatedSince)
 }
 
 func ListSiteInvoicesUpdatedSince(site string, updatedSince *time.Time) ([]chargebee.Invoice, error) {
-	return chargebee.ListInvoicesUpdatedSince(site, updatedSince)
+    return chargebee.ListInvoicesUpdatedSince(site, updatedSince)
 }
 
 func ListInvoices() ([]chargebee.Invoice, string, error) {
@@ -918,19 +918,19 @@ func ListAllSiteItemsAttached(site, id string) ([]chargebee.ItemAttached, error)
 }
 
 func ListItemsAttachedCreatedSince(id string, createdSince *time.Time) ([]chargebee.ItemAttached, error) {
-	return ListSiteItemsAttachedCreatedSince(client.Site(), id, createdSince)
+    return ListSiteItemsAttachedCreatedSince(client.Site(), id, createdSince)
 }
 
 func ListSiteItemsAttachedCreatedSince(site, id string, createdSince *time.Time) ([]chargebee.ItemAttached, error) {
-	return chargebee.ListItemsAttachedCreatedSince(site, id, createdSince)
+    return chargebee.ListItemsAttachedCreatedSince(site, id, createdSince)
 }
 
-func ListItemsAttachedUpdatedSince(site, id string, updatedSince *time.Time) ([]chargebee.ItemAttached, error) {
-	return ListSiteItemsAttachedUpdatedSince(client.Site(), id, updatedSince)
+func ListItemsAttachedUpdatedSince(id string, updatedSince *time.Time) ([]chargebee.ItemAttached, error) {
+    return ListSiteItemsAttachedUpdatedSince(client.Site(), id, updatedSince)
 }
 
 func ListSiteItemsAttachedUpdatedSince(site, id string, updatedSince *time.Time) ([]chargebee.ItemAttached, error) {
-	return chargebee.ListItemsAttachedUpdatedSince(site, id, updatedSince)
+    return chargebee.ListItemsAttachedUpdatedSince(site, id, updatedSince)
 }
 
 func ListItemsAttached(id string) ([]chargebee.ItemAttached, string, error) {
@@ -978,19 +978,19 @@ func ListAllSiteCouponCodes(site string) ([]chargebee.CouponCode, error) {
 }
 
 func ListCouponCodesCreatedSince(createdSince *time.Time) ([]chargebee.CouponCode, error) {
-	return ListSiteCouponCodesCreatedSince(client.Site(), createdSince)
+    return ListSiteCouponCodesCreatedSince(client.Site(), createdSince)
 }
 
 func ListSiteCouponCodesCreatedSince(site string, createdSince *time.Time) ([]chargebee.CouponCode, error) {
-	return chargebee.ListCouponCodesCreatedSince(site, createdSince)
+    return chargebee.ListCouponCodesCreatedSince(site, createdSince)
 }
 
-func ListCouponCodesUpdatedSince(site string, updatedSince *time.Time) ([]chargebee.CouponCode, error) {
-	return ListSiteCouponCodesUpdatedSince(client.Site(), updatedSince)
+func ListCouponCodesUpdatedSince(updatedSince *time.Time) ([]chargebee.CouponCode, error) {
+    return ListSiteCouponCodesUpdatedSince(client.Site(), updatedSince)
 }
 
 func ListSiteCouponCodesUpdatedSince(site string, updatedSince *time.Time) ([]chargebee.CouponCode, error) {
-	return chargebee.ListCouponCodesUpdatedSince(site, updatedSince)
+    return chargebee.ListCouponCodesUpdatedSince(site, updatedSince)
 }
 
 func ListCouponCodes() ([]chargebee.CouponCode, string, error) {
@@ -1030,19 +1030,19 @@ func ListAllSiteCouponSets(site string) ([]chargebee.CouponSet, error) {
 }
 
 func ListCouponSetsCreatedSince(createdSince *time.Time) ([]chargebee.CouponSet, error) {
-	return ListSiteCouponSetsCreatedSince(client.Site(), createdSince)
+    return ListSiteCouponSetsCreatedSince(client.Site(), createdSince)
 }
 
 func ListSiteCouponSetsCreatedSince(site string, createdSince *time.Time) ([]chargebee.CouponSet, error) {
-	return chargebee.ListCouponSetsCreatedSince(site, createdSince)
+    return chargebee.ListCouponSetsCreatedSince(site, createdSince)
 }
 
-func ListCouponSetsUpdatedSince(site string, updatedSince *time.Time) ([]chargebee.CouponSet, error) {
-	return ListSiteCouponSetsUpdatedSince(client.Site(), updatedSince)
+func ListCouponSetsUpdatedSince(updatedSince *time.Time) ([]chargebee.CouponSet, error) {
+    return ListSiteCouponSetsUpdatedSince(client.Site(), updatedSince)
 }
 
 func ListSiteCouponSetsUpdatedSince(site string, updatedSince *time.Time) ([]chargebee.CouponSet, error) {
-	return chargebee.ListCouponSetsUpdatedSince(site, updatedSince)
+    return chargebee.ListCouponSetsUpdatedSince(site, updatedSince)
 }
 
 func ListCouponSets() ([]chargebee.CouponSet, string, error) {
@@ -1090,19 +1090,19 @@ func ListAllSiteCoupons(site string) ([]chargebee.Coupon, error) {
 }
 
 func ListCouponsCreatedSince(createdSince *time.Time) ([]chargebee.Coupon, error) {
-	return ListSiteCouponsCreatedSince(client.Site(), createdSince)
+    return ListSiteCouponsCreatedSince(client.Site(), createdSince)
 }
 
 func ListSiteCouponsCreatedSince(site string, createdSince *time.Time) ([]chargebee.Coupon, error) {
-	return chargebee.ListCouponsCreatedSince(site, createdSince)
+    return chargebee.ListCouponsCreatedSince(site, createdSince)
 }
 
-func ListCouponsUpdatedSince(site string, updatedSince *time.Time) ([]chargebee.Coupon, error) {
-	return ListSiteCouponsUpdatedSince(client.Site(), updatedSince)
+func ListCouponsUpdatedSince(updatedSince *time.Time) ([]chargebee.Coupon, error) {
+    return ListSiteCouponsUpdatedSince(client.Site(), updatedSince)
 }
 
 func ListSiteCouponsUpdatedSince(site string, updatedSince *time.Time) ([]chargebee.Coupon, error) {
-	return chargebee.ListCouponsUpdatedSince(site, updatedSince)
+    return chargebee.ListCouponsUpdatedSince(site, updatedSince)
 }
 
 func ListCoupons() ([]chargebee.Coupon, string, error) {
@@ -1150,19 +1150,19 @@ func ListAllSiteDifferentialPrices(site string) ([]chargebee.DifferentialPrice, 
 }
 
 func ListDifferentialPricesCreatedSince(createdSince *time.Time) ([]chargebee.DifferentialPrice, error) {
-	return ListSiteDifferentialPricesCreatedSince(client.Site(), createdSince)
+    return ListSiteDifferentialPricesCreatedSince(client.Site(), createdSince)
 }
 
 func ListSiteDifferentialPricesCreatedSince(site string, createdSince *time.Time) ([]chargebee.DifferentialPrice, error) {
-	return chargebee.ListDifferentialPricesCreatedSince(site, createdSince)
+    return chargebee.ListDifferentialPricesCreatedSince(site, createdSince)
 }
 
-func ListDifferentialPricesUpdatedSince(site string, updatedSince *time.Time) ([]chargebee.DifferentialPrice, error) {
-	return ListSiteDifferentialPricesUpdatedSince(client.Site(), updatedSince)
+func ListDifferentialPricesUpdatedSince(updatedSince *time.Time) ([]chargebee.DifferentialPrice, error) {
+    return ListSiteDifferentialPricesUpdatedSince(client.Site(), updatedSince)
 }
 
 func ListSiteDifferentialPricesUpdatedSince(site string, updatedSince *time.Time) ([]chargebee.DifferentialPrice, error) {
-	return chargebee.ListDifferentialPricesUpdatedSince(site, updatedSince)
+    return chargebee.ListDifferentialPricesUpdatedSince(site, updatedSince)
 }
 
 func ListDifferentialPrices() ([]chargebee.DifferentialPrice, string, error) {
@@ -1210,19 +1210,19 @@ func ListAllSiteItemFamilies(site string) ([]chargebee.ItemFamily, error) {
 }
 
 func ListItemFamiliesCreatedSince(createdSince *time.Time) ([]chargebee.ItemFamily, error) {
-	return ListSiteItemFamiliesCreatedSince(client.Site(), createdSince)
+    return ListSiteItemFamiliesCreatedSince(client.Site(), createdSince)
 }
 
 func ListSiteItemFamiliesCreatedSince(site string, createdSince *time.Time) ([]chargebee.ItemFamily, error) {
-	return chargebee.ListItemFamiliesCreatedSince(site, createdSince)
+    return chargebee.ListItemFamiliesCreatedSince(site, createdSince)
 }
 
-func ListItemFamiliesUpdatedSince(site string, updatedSince *time.Time) ([]chargebee.ItemFamily, error) {
-	return ListSiteItemFamiliesUpdatedSince(client.Site(), updatedSince)
+func ListItemFamiliesUpdatedSince(updatedSince *time.Time) ([]chargebee.ItemFamily, error) {
+    return ListSiteItemFamiliesUpdatedSince(client.Site(), updatedSince)
 }
 
 func ListSiteItemFamiliesUpdatedSince(site string, updatedSince *time.Time) ([]chargebee.ItemFamily, error) {
-	return chargebee.ListItemFamiliesUpdatedSince(site, updatedSince)
+    return chargebee.ListItemFamiliesUpdatedSince(site, updatedSince)
 }
 
 func ListItemFamilies() ([]chargebee.ItemFamily, string, error) {
@@ -1270,19 +1270,19 @@ func ListAllSiteItemPrices(site string) ([]chargebee.ItemPrice, error) {
 }
 
 func ListItemPricesCreatedSince(createdSince *time.Time) ([]chargebee.ItemPrice, error) {
-	return ListSiteItemPricesCreatedSince(client.Site(), createdSince)
+    return ListSiteItemPricesCreatedSince(client.Site(), createdSince)
 }
 
 func ListSiteItemPricesCreatedSince(site string, createdSince *time.Time) ([]chargebee.ItemPrice, error) {
-	return chargebee.ListItemPricesCreatedSince(site, createdSince)
+    return chargebee.ListItemPricesCreatedSince(site, createdSince)
 }
 
-func ListItemPricesUpdatedSince(site string, updatedSince *time.Time) ([]chargebee.ItemPrice, error) {
-	return ListSiteItemPricesUpdatedSince(client.Site(), updatedSince)
+func ListItemPricesUpdatedSince(updatedSince *time.Time) ([]chargebee.ItemPrice, error) {
+    return ListSiteItemPricesUpdatedSince(client.Site(), updatedSince)
 }
 
 func ListSiteItemPricesUpdatedSince(site string, updatedSince *time.Time) ([]chargebee.ItemPrice, error) {
-	return chargebee.ListItemPricesUpdatedSince(site, updatedSince)
+    return chargebee.ListItemPricesUpdatedSince(site, updatedSince)
 }
 
 func ListItemPrices() ([]chargebee.ItemPrice, string, error) {
@@ -1330,19 +1330,19 @@ func ListAllSiteItems(site string) ([]chargebee.Item, error) {
 }
 
 func ListItemsCreatedSince(createdSince *time.Time) ([]chargebee.Item, error) {
-	return ListSiteItemsCreatedSince(client.Site(), createdSince)
+    return ListSiteItemsCreatedSince(client.Site(), createdSince)
 }
 
 func ListSiteItemsCreatedSince(site string, createdSince *time.Time) ([]chargebee.Item, error) {
-	return chargebee.ListItemsCreatedSince(site, createdSince)
+    return chargebee.ListItemsCreatedSince(site, createdSince)
 }
 
-func ListItemsUpdatedSince(site string, updatedSince *time.Time) ([]chargebee.Item, error) {
-	return ListSiteItemsUpdatedSince(client.Site(), updatedSince)
+func ListItemsUpdatedSince(updatedSince *time.Time) ([]chargebee.Item, error) {
+    return ListSiteItemsUpdatedSince(client.Site(), updatedSince)
 }
 
 func ListSiteItemsUpdatedSince(site string, updatedSince *time.Time) ([]chargebee.Item, error) {
-	return chargebee.ListItemsUpdatedSince(site, updatedSince)
+    return chargebee.ListItemsUpdatedSince(site, updatedSince)
 }
 
 func ListItems() ([]chargebee.Item, string, error) {
@@ -1390,19 +1390,19 @@ func ListAllSiteOrders(site string) ([]chargebee.Order, error) {
 }
 
 func ListOrdersCreatedSince(createdSince *time.Time) ([]chargebee.Order, error) {
-	return ListSiteOrdersCreatedSince(client.Site(), createdSince)
+    return ListSiteOrdersCreatedSince(client.Site(), createdSince)
 }
 
 func ListSiteOrdersCreatedSince(site string, createdSince *time.Time) ([]chargebee.Order, error) {
-	return chargebee.ListOrdersCreatedSince(site, createdSince)
+    return chargebee.ListOrdersCreatedSince(site, createdSince)
 }
 
-func ListOrdersUpdatedSince(site string, updatedSince *time.Time) ([]chargebee.Order, error) {
-	return ListSiteOrdersUpdatedSince(client.Site(), updatedSince)
+func ListOrdersUpdatedSince(updatedSince *time.Time) ([]chargebee.Order, error) {
+    return ListSiteOrdersUpdatedSince(client.Site(), updatedSince)
 }
 
 func ListSiteOrdersUpdatedSince(site string, updatedSince *time.Time) ([]chargebee.Order, error) {
-	return chargebee.ListOrdersUpdatedSince(site, updatedSince)
+    return chargebee.ListOrdersUpdatedSince(site, updatedSince)
 }
 
 func ListOrders() ([]chargebee.Order, string, error) {
@@ -1450,19 +1450,19 @@ func ListAllSitePaymentSources(site string) ([]chargebee.PaymentSource, error) {
 }
 
 func ListPaymentSourcesCreatedSince(createdSince *time.Time) ([]chargebee.PaymentSource, error) {
-	return ListSitePaymentSourcesCreatedSince(client.Site(), createdSince)
+    return ListSitePaymentSourcesCreatedSince(client.Site(), createdSince)
 }
 
 func ListSitePaymentSourcesCreatedSince(site string, createdSince *time.Time) ([]chargebee.PaymentSource, error) {
-	return chargebee.ListPaymentSourcesCreatedSince(site, createdSince)
+    return chargebee.ListPaymentSourcesCreatedSince(site, createdSince)
 }
 
-func ListPaymentSourcesUpdatedSince(site string, updatedSince *time.Time) ([]chargebee.PaymentSource, error) {
-	return ListSitePaymentSourcesUpdatedSince(client.Site(), updatedSince)
+func ListPaymentSourcesUpdatedSince(updatedSince *time.Time) ([]chargebee.PaymentSource, error) {
+    return ListSitePaymentSourcesUpdatedSince(client.Site(), updatedSince)
 }
 
 func ListSitePaymentSourcesUpdatedSince(site string, updatedSince *time.Time) ([]chargebee.PaymentSource, error) {
-	return chargebee.ListPaymentSourcesUpdatedSince(site, updatedSince)
+    return chargebee.ListPaymentSourcesUpdatedSince(site, updatedSince)
 }
 
 func ListPaymentSources() ([]chargebee.PaymentSource, string, error) {
@@ -1510,19 +1510,19 @@ func ListAllSiteVirtualBankAccounts(site string) ([]chargebee.VirtualBankAccount
 }
 
 func ListVirtualBankAccountsCreatedSince(createdSince *time.Time) ([]chargebee.VirtualBankAccount, error) {
-	return ListSiteVirtualBankAccountsCreatedSince(client.Site(), createdSince)
+    return ListSiteVirtualBankAccountsCreatedSince(client.Site(), createdSince)
 }
 
 func ListSiteVirtualBankAccountsCreatedSince(site string, createdSince *time.Time) ([]chargebee.VirtualBankAccount, error) {
-	return chargebee.ListVirtualBankAccountsCreatedSince(site, createdSince)
+    return chargebee.ListVirtualBankAccountsCreatedSince(site, createdSince)
 }
 
-func ListVirtualBankAccountsUpdatedSince(site string, updatedSince *time.Time) ([]chargebee.VirtualBankAccount, error) {
-	return ListSiteVirtualBankAccountsUpdatedSince(client.Site(), updatedSince)
+func ListVirtualBankAccountsUpdatedSince(updatedSince *time.Time) ([]chargebee.VirtualBankAccount, error) {
+    return ListSiteVirtualBankAccountsUpdatedSince(client.Site(), updatedSince)
 }
 
 func ListSiteVirtualBankAccountsUpdatedSince(site string, updatedSince *time.Time) ([]chargebee.VirtualBankAccount, error) {
-	return chargebee.ListVirtualBankAccountsUpdatedSince(site, updatedSince)
+    return chargebee.ListVirtualBankAccountsUpdatedSince(site, updatedSince)
 }
 
 func ListVirtualBankAccounts() ([]chargebee.VirtualBankAccount, string, error) {
@@ -1570,19 +1570,19 @@ func ListAllSiteTransactions(site string) ([]chargebee.Transaction, error) {
 }
 
 func ListTransactionsCreatedSince(createdSince *time.Time) ([]chargebee.Transaction, error) {
-	return ListSiteTransactionsCreatedSince(client.Site(), createdSince)
+    return ListSiteTransactionsCreatedSince(client.Site(), createdSince)
 }
 
 func ListSiteTransactionsCreatedSince(site string, createdSince *time.Time) ([]chargebee.Transaction, error) {
-	return chargebee.ListTransactionsCreatedSince(site, createdSince)
+    return chargebee.ListTransactionsCreatedSince(site, createdSince)
 }
 
-func ListTransactionsUpdatedSince(site string, updatedSince *time.Time) ([]chargebee.Transaction, error) {
-	return ListSiteTransactionsUpdatedSince(client.Site(), updatedSince)
+func ListTransactionsUpdatedSince(updatedSince *time.Time) ([]chargebee.Transaction, error) {
+    return ListSiteTransactionsUpdatedSince(client.Site(), updatedSince)
 }
 
 func ListSiteTransactionsUpdatedSince(site string, updatedSince *time.Time) ([]chargebee.Transaction, error) {
-	return chargebee.ListTransactionsUpdatedSince(site, updatedSince)
+    return chargebee.ListTransactionsUpdatedSince(site, updatedSince)
 }
 
 func ListTransactions() ([]chargebee.Transaction, string, error) {
@@ -1630,19 +1630,19 @@ func ListAllSiteQuoteLineGroups(site, id string) ([]chargebee.QuoteLineGroup, er
 }
 
 func ListQuoteLineGroupsCreatedSince(id string, createdSince *time.Time) ([]chargebee.QuoteLineGroup, error) {
-	return ListSiteQuoteLineGroupsCreatedSince(client.Site(), id, createdSince)
+    return ListSiteQuoteLineGroupsCreatedSince(client.Site(), id, createdSince)
 }
 
 func ListSiteQuoteLineGroupsCreatedSince(site, id string, createdSince *time.Time) ([]chargebee.QuoteLineGroup, error) {
-	return chargebee.ListQuoteLineGroupsCreatedSince(site, id, createdSince)
+    return chargebee.ListQuoteLineGroupsCreatedSince(site, id, createdSince)
 }
 
-func ListQuoteLineGroupsUpdatedSince(site, id string, updatedSince *time.Time) ([]chargebee.QuoteLineGroup, error) {
-	return ListSiteQuoteLineGroupsUpdatedSince(client.Site(), id, updatedSince)
+func ListQuoteLineGroupsUpdatedSince(id string, updatedSince *time.Time) ([]chargebee.QuoteLineGroup, error) {
+    return ListSiteQuoteLineGroupsUpdatedSince(client.Site(), id, updatedSince)
 }
 
 func ListSiteQuoteLineGroupsUpdatedSince(site, id string, updatedSince *time.Time) ([]chargebee.QuoteLineGroup, error) {
-	return chargebee.ListQuoteLineGroupsUpdatedSince(site, id, updatedSince)
+    return chargebee.ListQuoteLineGroupsUpdatedSince(site, id, updatedSince)
 }
 
 func ListQuoteLineGroups(id string) ([]chargebee.QuoteLineGroup, string, error) {
@@ -1682,19 +1682,19 @@ func ListAllSiteQuotes(site string) ([]chargebee.Quote, error) {
 }
 
 func ListQuotesCreatedSince(createdSince *time.Time) ([]chargebee.Quote, error) {
-	return ListSiteQuotesCreatedSince(client.Site(), createdSince)
+    return ListSiteQuotesCreatedSince(client.Site(), createdSince)
 }
 
 func ListSiteQuotesCreatedSince(site string, createdSince *time.Time) ([]chargebee.Quote, error) {
-	return chargebee.ListQuotesCreatedSince(site, createdSince)
+    return chargebee.ListQuotesCreatedSince(site, createdSince)
 }
 
-func ListQuotesUpdatedSince(site string, updatedSince *time.Time) ([]chargebee.Quote, error) {
-	return ListSiteQuotesUpdatedSince(client.Site(), updatedSince)
+func ListQuotesUpdatedSince(updatedSince *time.Time) ([]chargebee.Quote, error) {
+    return ListSiteQuotesUpdatedSince(client.Site(), updatedSince)
 }
 
 func ListSiteQuotesUpdatedSince(site string, updatedSince *time.Time) ([]chargebee.Quote, error) {
-	return chargebee.ListQuotesUpdatedSince(site, updatedSince)
+    return chargebee.ListQuotesUpdatedSince(site, updatedSince)
 }
 
 func ListQuotes() ([]chargebee.Quote, string, error) {
@@ -1742,19 +1742,19 @@ func ListAllSiteContractTerms(site, id string) ([]chargebee.ContractTerm, error)
 }
 
 func ListContractTermsCreatedSince(id string, createdSince *time.Time) ([]chargebee.ContractTerm, error) {
-	return ListSiteContractTermsCreatedSince(client.Site(), id, createdSince)
+    return ListSiteContractTermsCreatedSince(client.Site(), id, createdSince)
 }
 
 func ListSiteContractTermsCreatedSince(site, id string, createdSince *time.Time) ([]chargebee.ContractTerm, error) {
-	return chargebee.ListContractTermsCreatedSince(site, id, createdSince)
+    return chargebee.ListContractTermsCreatedSince(site, id, createdSince)
 }
 
-func ListContractTermsUpdatedSince(site, id string, updatedSince *time.Time) ([]chargebee.ContractTerm, error) {
-	return ListSiteContractTermsUpdatedSince(client.Site(), id, updatedSince)
+func ListContractTermsUpdatedSince(id string, updatedSince *time.Time) ([]chargebee.ContractTerm, error) {
+    return ListSiteContractTermsUpdatedSince(client.Site(), id, updatedSince)
 }
 
 func ListSiteContractTermsUpdatedSince(site, id string, updatedSince *time.Time) ([]chargebee.ContractTerm, error) {
-	return chargebee.ListContractTermsUpdatedSince(site, id, updatedSince)
+    return chargebee.ListContractTermsUpdatedSince(site, id, updatedSince)
 }
 
 func ListContractTerms(id string) ([]chargebee.ContractTerm, string, error) {
@@ -1794,19 +1794,19 @@ func ListAllSiteDiscounts(site, id string) ([]chargebee.Discount, error) {
 }
 
 func ListDiscountsCreatedSince(id string, createdSince *time.Time) ([]chargebee.Discount, error) {
-	return ListSiteDiscountsCreatedSince(client.Site(), id, createdSince)
+    return ListSiteDiscountsCreatedSince(client.Site(), id, createdSince)
 }
 
 func ListSiteDiscountsCreatedSince(site, id string, createdSince *time.Time) ([]chargebee.Discount, error) {
-	return chargebee.ListDiscountsCreatedSince(site, id, createdSince)
+    return chargebee.ListDiscountsCreatedSince(site, id, createdSince)
 }
 
-func ListDiscountsUpdatedSince(site, id string, updatedSince *time.Time) ([]chargebee.Discount, error) {
-	return ListSiteDiscountsUpdatedSince(client.Site(), id, updatedSince)
+func ListDiscountsUpdatedSince(id string, updatedSince *time.Time) ([]chargebee.Discount, error) {
+    return ListSiteDiscountsUpdatedSince(client.Site(), id, updatedSince)
 }
 
 func ListSiteDiscountsUpdatedSince(site, id string, updatedSince *time.Time) ([]chargebee.Discount, error) {
-	return chargebee.ListDiscountsUpdatedSince(site, id, updatedSince)
+    return chargebee.ListDiscountsUpdatedSince(site, id, updatedSince)
 }
 
 func ListDiscounts(id string) ([]chargebee.Discount, string, error) {
@@ -1846,19 +1846,19 @@ func ListAllSiteSubscriptionEntitlements(site, id string) ([]chargebee.Subscript
 }
 
 func ListSubscriptionEntitlementsCreatedSince(id string, createdSince *time.Time) ([]chargebee.SubscriptionEntitlement, error) {
-	return ListSiteSubscriptionEntitlementsCreatedSince(client.Site(), id, createdSince)
+    return ListSiteSubscriptionEntitlementsCreatedSince(client.Site(), id, createdSince)
 }
 
 func ListSiteSubscriptionEntitlementsCreatedSince(site, id string, createdSince *time.Time) ([]chargebee.SubscriptionEntitlement, error) {
-	return chargebee.ListSubscriptionEntitlementsCreatedSince(site, id, createdSince)
+    return chargebee.ListSubscriptionEntitlementsCreatedSince(site, id, createdSince)
 }
 
-func ListSubscriptionEntitlementsUpdatedSince(site, id string, updatedSince *time.Time) ([]chargebee.SubscriptionEntitlement, error) {
-	return ListSiteSubscriptionEntitlementsUpdatedSince(client.Site(), id, updatedSince)
+func ListSubscriptionEntitlementsUpdatedSince(id string, updatedSince *time.Time) ([]chargebee.SubscriptionEntitlement, error) {
+    return ListSiteSubscriptionEntitlementsUpdatedSince(client.Site(), id, updatedSince)
 }
 
 func ListSiteSubscriptionEntitlementsUpdatedSince(site, id string, updatedSince *time.Time) ([]chargebee.SubscriptionEntitlement, error) {
-	return chargebee.ListSubscriptionEntitlementsUpdatedSince(site, id, updatedSince)
+    return chargebee.ListSubscriptionEntitlementsUpdatedSince(site, id, updatedSince)
 }
 
 func ListSubscriptionEntitlements(id string) ([]chargebee.SubscriptionEntitlement, string, error) {
@@ -1898,19 +1898,19 @@ func ListAllSiteGifts(site string) ([]chargebee.Gift, error) {
 }
 
 func ListGiftsCreatedSince(createdSince *time.Time) ([]chargebee.Gift, error) {
-	return ListSiteGiftsCreatedSince(client.Site(), createdSince)
+    return ListSiteGiftsCreatedSince(client.Site(), createdSince)
 }
 
 func ListSiteGiftsCreatedSince(site string, createdSince *time.Time) ([]chargebee.Gift, error) {
-	return chargebee.ListGiftsCreatedSince(site, createdSince)
+    return chargebee.ListGiftsCreatedSince(site, createdSince)
 }
 
-func ListGiftsUpdatedSince(site string, updatedSince *time.Time) ([]chargebee.Gift, error) {
-	return ListSiteGiftsUpdatedSince(client.Site(), updatedSince)
+func ListGiftsUpdatedSince(updatedSince *time.Time) ([]chargebee.Gift, error) {
+    return ListSiteGiftsUpdatedSince(client.Site(), updatedSince)
 }
 
 func ListSiteGiftsUpdatedSince(site string, updatedSince *time.Time) ([]chargebee.Gift, error) {
-	return chargebee.ListGiftsUpdatedSince(site, updatedSince)
+    return chargebee.ListGiftsUpdatedSince(site, updatedSince)
 }
 
 func ListGifts() ([]chargebee.Gift, string, error) {
@@ -1958,19 +1958,19 @@ func ListAllSiteAdvancedInvoiceSchedules(site, id string) ([]chargebee.AdvancedI
 }
 
 func ListAdvancedInvoiceSchedulesCreatedSince(id string, createdSince *time.Time) ([]chargebee.AdvancedInvoiceSchedule, error) {
-	return ListSiteAdvancedInvoiceSchedulesCreatedSince(client.Site(), id, createdSince)
+    return ListSiteAdvancedInvoiceSchedulesCreatedSince(client.Site(), id, createdSince)
 }
 
 func ListSiteAdvancedInvoiceSchedulesCreatedSince(site, id string, createdSince *time.Time) ([]chargebee.AdvancedInvoiceSchedule, error) {
-	return chargebee.ListAdvancedInvoiceSchedulesCreatedSince(site, id, createdSince)
+    return chargebee.ListAdvancedInvoiceSchedulesCreatedSince(site, id, createdSince)
 }
 
-func ListAdvancedInvoiceSchedulesUpdatedSince(site, id string, updatedSince *time.Time) ([]chargebee.AdvancedInvoiceSchedule, error) {
-	return ListSiteAdvancedInvoiceSchedulesUpdatedSince(client.Site(), id, updatedSince)
+func ListAdvancedInvoiceSchedulesUpdatedSince(id string, updatedSince *time.Time) ([]chargebee.AdvancedInvoiceSchedule, error) {
+    return ListSiteAdvancedInvoiceSchedulesUpdatedSince(client.Site(), id, updatedSince)
 }
 
 func ListSiteAdvancedInvoiceSchedulesUpdatedSince(site, id string, updatedSince *time.Time) ([]chargebee.AdvancedInvoiceSchedule, error) {
-	return chargebee.ListAdvancedInvoiceSchedulesUpdatedSince(site, id, updatedSince)
+    return chargebee.ListAdvancedInvoiceSchedulesUpdatedSince(site, id, updatedSince)
 }
 
 func ListAdvancedInvoiceSchedules(id string) ([]chargebee.AdvancedInvoiceSchedule, string, error) {
@@ -2010,19 +2010,19 @@ func ListAllSiteRamps(site string) ([]chargebee.Ramp, error) {
 }
 
 func ListRampsCreatedSince(createdSince *time.Time) ([]chargebee.Ramp, error) {
-	return ListSiteRampsCreatedSince(client.Site(), createdSince)
+    return ListSiteRampsCreatedSince(client.Site(), createdSince)
 }
 
 func ListSiteRampsCreatedSince(site string, createdSince *time.Time) ([]chargebee.Ramp, error) {
-	return chargebee.ListRampsCreatedSince(site, createdSince)
+    return chargebee.ListRampsCreatedSince(site, createdSince)
 }
 
-func ListRampsUpdatedSince(site string, updatedSince *time.Time) ([]chargebee.Ramp, error) {
-	return ListSiteRampsUpdatedSince(client.Site(), updatedSince)
+func ListRampsUpdatedSince(updatedSince *time.Time) ([]chargebee.Ramp, error) {
+    return ListSiteRampsUpdatedSince(client.Site(), updatedSince)
 }
 
 func ListSiteRampsUpdatedSince(site string, updatedSince *time.Time) ([]chargebee.Ramp, error) {
-	return chargebee.ListRampsUpdatedSince(site, updatedSince)
+    return chargebee.ListRampsUpdatedSince(site, updatedSince)
 }
 
 func ListRamps() ([]chargebee.Ramp, string, error) {
@@ -2062,19 +2062,19 @@ func ListAllSiteUsages(site string) ([]chargebee.Usage, error) {
 }
 
 func ListUsagesCreatedSince(createdSince *time.Time) ([]chargebee.Usage, error) {
-	return ListSiteUsagesCreatedSince(client.Site(), createdSince)
+    return ListSiteUsagesCreatedSince(client.Site(), createdSince)
 }
 
 func ListSiteUsagesCreatedSince(site string, createdSince *time.Time) ([]chargebee.Usage, error) {
-	return chargebee.ListUsagesCreatedSince(site, createdSince)
+    return chargebee.ListUsagesCreatedSince(site, createdSince)
 }
 
-func ListUsagesUpdatedSince(site string, updatedSince *time.Time) ([]chargebee.Usage, error) {
-	return ListSiteUsagesUpdatedSince(client.Site(), updatedSince)
+func ListUsagesUpdatedSince(updatedSince *time.Time) ([]chargebee.Usage, error) {
+    return ListSiteUsagesUpdatedSince(client.Site(), updatedSince)
 }
 
 func ListSiteUsagesUpdatedSince(site string, updatedSince *time.Time) ([]chargebee.Usage, error) {
-	return chargebee.ListUsagesUpdatedSince(site, updatedSince)
+    return chargebee.ListUsagesUpdatedSince(site, updatedSince)
 }
 
 func ListUsages() ([]chargebee.Usage, string, error) {
@@ -2114,19 +2114,19 @@ func ListAllSiteSubscriptions(site string) ([]chargebee.Subscription, error) {
 }
 
 func ListSubscriptionsCreatedSince(createdSince *time.Time) ([]chargebee.Subscription, error) {
-	return ListSiteSubscriptionsCreatedSince(client.Site(), createdSince)
+    return ListSiteSubscriptionsCreatedSince(client.Site(), createdSince)
 }
 
 func ListSiteSubscriptionsCreatedSince(site string, createdSince *time.Time) ([]chargebee.Subscription, error) {
-	return chargebee.ListSubscriptionsCreatedSince(site, createdSince)
+    return chargebee.ListSubscriptionsCreatedSince(site, createdSince)
 }
 
-func ListSubscriptionsUpdatedSince(site string, updatedSince *time.Time) ([]chargebee.Subscription, error) {
-	return ListSiteSubscriptionsUpdatedSince(client.Site(), updatedSince)
+func ListSubscriptionsUpdatedSince(updatedSince *time.Time) ([]chargebee.Subscription, error) {
+    return ListSiteSubscriptionsUpdatedSince(client.Site(), updatedSince)
 }
 
 func ListSiteSubscriptionsUpdatedSince(site string, updatedSince *time.Time) ([]chargebee.Subscription, error) {
-	return chargebee.ListSubscriptionsUpdatedSince(site, updatedSince)
+    return chargebee.ListSubscriptionsUpdatedSince(site, updatedSince)
 }
 
 func ListSubscriptions() ([]chargebee.Subscription, string, error) {

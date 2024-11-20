@@ -38,7 +38,7 @@ func ListSite{{ $method.Name }}CreatedSince(site{{ if .WithID }}, id{{end}} stri
     return chargebee.List{{ $method.Name }}CreatedSince(site{{ if .WithID }}, id{{ end }}, createdSince)
 }
 
-func List{{ $method.Name }}UpdatedSince(site{{ if .WithID }}, id{{end}} string, updatedSince *time.Time) ([]chargebee.{{ $method.NameSingular }}, error) {
+func List{{ $method.Name }}UpdatedSince({{ if .WithID }}id string, {{end}}updatedSince *time.Time) ([]chargebee.{{ $method.NameSingular }}, error) {
     return ListSite{{ $method.Name }}UpdatedSince(client.Site(){{ if .WithID }}, id{{ end }}, updatedSince)
 }
 

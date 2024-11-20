@@ -3,20 +3,19 @@ package chargebee
 // THIS IS GENERATED CODE. DO NOT EDIT.
 
 import (
-	"net/url"
-
 	. "github.com/bitsnap/chargebee-api-client/chargebee/client"
 	"github.com/bitsnap/chargebee-api-client/chargebee/enums"
 	"github.com/goccy/go-json"
 	"github.com/gofiber/fiber/v2"
+	"net/url"
 )
 
 type CouponCode struct {
-	Code          string           `json:"code" validate:"required"`
-	Status        enums.StatusEnum `json:"status" validate:"required"`
-	CouponId      string           `json:"coupon_id" validate:"required"`
-	CouponSetId   string           `json:"coupon_set_id" validate:"required"`
-	CouponSetName string           `json:"coupon_set_name" validate:"required"`
+    Code string `json:"code" validate:"required"`
+    Status enums.StatusEnum `json:"status" validate:"required"`
+    CouponId string `json:"coupon_id" validate:"required"`
+    CouponSetId string `json:"coupon_set_id" validate:"required"`
+    CouponSetName string `json:"coupon_set_name" validate:"required"`
 }
 
 func ListCouponCodesPageSortBy(site string, offset string, sortBy *SortBy) ([]CouponCode, string, error) {
@@ -27,43 +26,43 @@ func ListCouponCodesPageSortBy(site string, offset string, sortBy *SortBy) ([]Co
 	if err != nil {
 		return nil, "", err
 	}
-
-	content, err := GetQuery(client, parsedUrl, offset, sortBy)
-	if err != nil {
-		return nil, "", err
-	}
-
+	
+    content, err := GetQuery(client, parsedUrl, offset, sortBy)
+    if err != nil {
+        return nil, "", err
+    }
+    		
 	type CouponCodeListItem struct {
 		CouponCode CouponCode `json:"CouponCode"`
 	}
 
-	type CouponCodePage struct {
-		List       []CouponCodeListItem `json:"list"`
-		NextOffset string               `json:"next_offset,omitempty"`
-	}
+    type CouponCodePage struct {
+        List       []CouponCodeListItem `json:"list"`
+        NextOffset string `json:"next_offset,omitempty"`
+    }
 
 	entries := CouponCodePage{
-		List: make([]CouponCodeListItem, 0, 10),
+		List:       make([]CouponCodeListItem, 0, 10),
 	}
 
 	err = json.Unmarshal(content, &entries)
 	if err != nil {
 		return nil, "", err
 	}
-
+	
 	if len(entries.List) == 0 {
-		return []CouponCode{}, "", nil
-	}
-
+        return []CouponCode{}, "", nil
+    }
+	
 	result := make([]CouponCode, 0, len(entries.List))
 	for _, r := range entries.List {
 		result = append(result, r.CouponCode)
 	}
 
-	if len(entries.NextOffset) > 0 {
-		return ResultWithOffset(result, offset, entries.NextOffset)
-	}
-
+    if len(entries.NextOffset) > 0 {
+        return ResultWithOffset(result, offset, entries.NextOffset)
+    }
+	
 	return result, "", nil
 }
 
@@ -79,17 +78,17 @@ func RetrieveCouponCodeById(site string, id string) (*CouponCode, error) {
 	if err != nil {
 		return nil, err
 	}
-
-	content, err := GetQuery(client, parsedUrl, "", nil)
-	if err != nil {
-		return nil, err
-	}
-
+	
+    content, err := GetQuery(client, parsedUrl, "", nil)
+    if err != nil {
+        return nil, err
+    }
+    	
 	type CouponCodeItem struct {
 		CouponCode CouponCode `json:"CouponCode"`
 	}
 
-	var item CouponCodeItem
+    var item CouponCodeItem
 
 	err = json.Unmarshal(content, &item)
 	if err != nil {
