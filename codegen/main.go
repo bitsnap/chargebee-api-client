@@ -186,7 +186,7 @@ var content = map[string][]func() string{
 	// "subscription_address.go": {
 	// subscriptions.GenerateSubscriptionAddressesModel,
 	// subscriptions.GenerateRetrieveSubscriptionAddress,
-	//},
+	// },
 	"subscription_contract_terms.go": {
 		subscriptions.GenerateSubscriptionContractTermsModel,
 		subscriptions.GenerateListSubscriptionContractTerms,

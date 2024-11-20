@@ -13,15 +13,15 @@ import (
 )
 
 type Event struct {
-	Id         string                 `json:"id" validate:"required"`
-	OccurredAt uint64                 `json:"occurred_at" validate:"required"`
-	Source     enums.SourceEnum       `json:"source" validate:"required"`
-	User       string                 `json:"user"`
-	EventType  enums.EventTypeEnum    `json:"event_type"`
-	ApiVersion enums.ApiVersionEnum   `json:"api_version"`
-	Content    map[string]interface{} `json:"content" validate:"required"`
-	OriginUser string                 `json:"origin_user"`
-	Webhooks   []models.Webhook       `json:"webhooks"`
+	Id         string               `json:"id" validate:"required"`
+	OccurredAt uint64               `json:"occurred_at" validate:"required"`
+	Source     enums.SourceEnum     `json:"source" validate:"required"`
+	User       string               `json:"user"`
+	EventType  enums.EventTypeEnum  `json:"event_type"`
+	ApiVersion enums.ApiVersionEnum `json:"api_version"`
+	Content    map[string]any       `json:"content" validate:"required"`
+	OriginUser string               `json:"origin_user"`
+	Webhooks   []models.Webhook     `json:"webhooks"`
 }
 
 func ListEventsPageSortBy(site string, offset string, sortBy *SortBy) ([]Event, string, error) {

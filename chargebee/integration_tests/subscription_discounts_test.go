@@ -16,7 +16,7 @@ var _ = Describe("Chargebee discounts", func() {
 				//
 				// addresses, err := chargebee.ListSubscriptionDiscounts(UseTestSite(), testSubscriptionID)
 				// Expect(err).To(Not(HaveOccurred()))
-				//Expect(addresses).To(goldga.Match())
+				// Expect(addresses).To(goldga.Match())
 			}
 		})
 	})

@@ -57,7 +57,7 @@ type Subscription struct {
 	ExchangeRate                      *decimal.Decimal          `json:"exchange_rate"`
 	BaseCurrencyCode                  string                    `json:"base_currency_code"`
 	InvoiceNotes                      string                    `json:"invoice_notes"`
-	Metadata                          map[string]interface{}    `json:"metadata"`
+	Metadata                          map[string]any            `json:"metadata"`
 	Deleted                           bool                      `json:"deleted" validate:"required"`
 	ChangesScheduledAt                uint64                    `json:"changes_scheduled_at"`
 	CancelReasonCode                  string                    `json:"cancel_reason_code"`

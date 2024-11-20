@@ -16,7 +16,7 @@ var _ = Describe("Chargebee subscription address", func() {
 				//
 				// shippingAddr, err := chargebee.SubscriptionShippingAddress(UseTestSite(), testSubscriptionID)
 				// Expect(err).To(Not(HaveOccurred()))
-				//if shippingAddr != nil {
+				// if shippingAddr != nil {
 				//	Expect(shippingAddr).To(goldga.Match())
 				//}
 				//

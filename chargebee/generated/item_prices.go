@@ -44,7 +44,7 @@ type ItemPrice struct {
 	ArchivedAt                      uint64                                    `json:"archived_at"`
 	InvoiceNotes                    string                                    `json:"invoice_notes"`
 	IsTaxable                       bool                                      `json:"is_taxable"`
-	Metadata                        map[string]interface{}                    `json:"metadata"`
+	Metadata                        map[string]any                            `json:"metadata"`
 	ItemType                        enums.ItemTypeEnum                        `json:"item_type"`
 	ShowDescriptionInInvoices       bool                                      `json:"show_description_in_invoices"`
 	ShowDescriptionInQuotes         bool                                      `json:"show_description_in_quotes"`

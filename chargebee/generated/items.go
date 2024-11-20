@@ -35,7 +35,7 @@ type Item struct {
 	UsageCalculation     enums.UsageCalculationEnum  `json:"usage_calculation"`
 	ArchivedAt           uint64                      `json:"archived_at"`
 	Channel              enums.ChannelEnum           `json:"channel"`
-	Metadata             map[string]interface{}      `json:"metadata"`
+	Metadata             map[string]any              `json:"metadata"`
 	BusinessEntityId     string                      `json:"business_entity_id"`
 	ApplicableItems      []models.ApplicableItem     `json:"applicable_items"`
 	BundleItems          []models.BundleItem         `json:"bundle_items"`
