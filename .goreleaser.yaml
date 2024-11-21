@@ -2,33 +2,14 @@ before:
   hooks:
     - go mod tidy
     - go generate ./...
+    - go fmt ./...
+    - golangci-lint run -c .golangci.yml --fix
+    - gofmt -s -r 'interface{} -> any' -w .
+    - goimports -w .
+    - gofumpt -w .
 builds:
-  - main: ./main.go
-    binary: chargebee-client-codegen
-    env:
-      - CGO_ENABLED=0
-    goos:
-      - linux
-    goarch:
-      - amd64
-      - arm64
-dist: bin
-archives:
-  - id: chargebee-client-codegen
-    name_template: >-
-      {{- .ProjectName }}_
-      {{- title .Os }}_
-      {{- if eq .Arch "amd64" }}x86_64
-      {{- else if eq .Arch "386" }}i386
-      {{- else }}{{ .Arch }}{{ end }}
-      {{- if .Arm }}v{{ .Arm }}{{ end -}}
-checksum:
-  name_template: 'checksums.txt'
+  - skip: true
 snapshot:
   name_template: "{{ .Tag }}-next"
 changelog:
   sort: asc
-  filters:
-    exclude:
-    - '^docs:'
-    - '^test:'

@@ -4,7 +4,7 @@ package chargebee
 
 import (
 	. "github.com/bitsnap/chargebee-api-client/chargebee/client"
-	"github.com/bitsnap/chargebee-api-client/chargebee/models"
+	"github.com/bitsnap/chargebee-api-client/chargebee/generated/models"
 	"github.com/goccy/go-json"
 	"github.com/gofiber/fiber/v2"
 	"net/url"

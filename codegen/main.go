@@ -1,6 +1,7 @@
 package main
 
 import (
+	"github.com/bitsnap/chargebee-api-client/codegen/client/enums"
 	"os"
 	"path"
 	"strings"
@@ -228,8 +229,8 @@ var content = map[string][]func() string{
 
 func header(content string) string {
 	common := "\t. \"github.com/bitsnap/chargebee-api-client/chargebee/client\"\n"
-	enums := "\t\"github.com/bitsnap/chargebee-api-client/chargebee/enums\"\n"
-	models := "\t\"github.com/bitsnap/chargebee-api-client/chargebee/models\"\n"
+	enums := "\t\"github.com/bitsnap/chargebee-api-client/chargebee/generated/enums\"\n"
+	models := "\t\"github.com/bitsnap/chargebee-api-client/chargebee/generated/models\"\n"
 	decimal := "\t\"github.com/shopspring/decimal\"\n"
 	time := "\t\"time\"\n"
 
@@ -278,6 +279,7 @@ func main() {
 
 	rootDir = path.Join(rootDir, os.Args[1])
 	targetDir := path.Join(rootDir, "chargebee", "generated")
+	targetEnumsDir := path.Join(rootDir, "chargebee", "generated", "enums")
 
 	syncLogger := SetGlobalLogger()
 	defer syncLogger()
@@ -287,9 +289,8 @@ func main() {
 		"targetDir", targetDir,
 	)
 
-	GenerateInto(rootDir, func(_ string) string {
-		return ""
-	}, templates.GeneratePublicAPIContent())
+	GenerateInto(targetEnumsDir, enums.EnumHeader, enums.GenerateEnumsContent())
 
+	GenerateInto(rootDir, templates.NoHeader, templates.GeneratePublicAPIContent())
 	GenerateInto(targetDir, header, content)
 }

@@ -1,6 +1,6 @@
-### [Bitsnap](https://bitsnap.io) Chargebee API Client
+### [Chargebee](https://www.chargebee.com/) API Client
 
-[Bitsnap](https://bitsnap.io) Operational Intelligence Platform [Chargebee](https://www.chargebee.com/) client package.
+[Bitsnap](https://bitsnap.io) Operational Intelligence Platform [Chargebee](https://www.chargebee.com/) API client package.
 
 Existing accounting platforms often suffer from reliability issues, such as potential ledger data loss and inconsistent API specifications, 
 making long-term use and interoperability risky. To address these challenges, Yuriy is publishing up-to-date Accounting Services API Clients with a focus on long-term support. 

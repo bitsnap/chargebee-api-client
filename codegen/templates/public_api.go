@@ -25,3 +25,7 @@ func GeneratePublicAPIContent() map[string][]func() string {
 		},
 	}
 }
+
+func NoHeader(_ string) string {
+	return ""
+}

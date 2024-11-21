@@ -3,7 +3,7 @@ package chargebee
 // THIS IS GENERATED CODE. DO NOT EDIT.
 
 import (
-	"github.com/bitsnap/chargebee-api-client/chargebee/models"
+	"github.com/bitsnap/chargebee-api-client/chargebee/generated/models"
 
 )
 
