@@ -5,6 +5,6 @@ package enums
 type InitiatorTypeEnum string
 
 const (
-        Customer InitiatorTypeEnum = "customer"
-        Merchant InitiatorTypeEnum = "merchant"
+	Customer InitiatorTypeEnum = "customer"
+	Merchant InitiatorTypeEnum = "merchant"
 )

@@ -6,6 +6,20 @@ Existing accounting platforms often suffer from reliability issues, such as pote
 making long-term use and interoperability risky. To address these challenges, Yuriy is publishing up-to-date Accounting Services API Clients with a focus on long-term support. 
 These clients aim to uncover and highlight inconsistencies in API specifications and documentation.
 
+Bitsnap focuses on importing and data processing, instead of synchronization.
+
+### Bitsnap Accounting Read-only API Clients
+
+ - [Chargebee](https://github.com/bitsnap/chargebee-api-client) this one
+ - [Freshbooks](https://github.com/bitsnap/freshbooks-api-client)
+ - [Myob](https://github.com/bitsnap/myob-api-client)
+ - [Paypal](https://github.com/bitsnap/paypal-api-client)
+ - [QBO](https://github.com/bitsnap/qbo-api-client)
+ - [Stripe](https://github.com/bitsnap/stripe-api-client)
+ - [Wave](https://github.com/bitsnap/wave-api-client)
+ - [Xero](https://github.com/bitsnap/xero-api-client)
+ - [Zoho Books](https://github.com/bitsnap/zohobooks-api-client)
+
 ### Usage
 
 ```go
@@ -92,6 +106,7 @@ CHARGEBEE_API_TOKEN=test_xxx CHARGEBEE_SITE=xxx-test ginkgo run ./...
  - [ ] implement webhook API endpoints for CDC streaming
  - [ ] provide [Apache Flink](https://flink.apache.org/) [JNI source](https://nightlies.apache.org/flink/flink-docs-master/docs/dev/datastream/sources/) binding  
  - [ ] provide [Argo Events](https://argoproj.github.io/argo-events/) source binding
+ - [ ] benchmarks
 
 ## License
 

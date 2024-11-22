@@ -5,6 +5,6 @@ package enums
 type ApplyOnEnum string
 
 const (
-        EachSpecifiedItem ApplyOnEnum = "each_specified_item"
-        InvoiceAmount ApplyOnEnum = "invoice_amount"
+	EachSpecifiedItem ApplyOnEnum = "each_specified_item"
+	InvoiceAmount     ApplyOnEnum = "invoice_amount"
 )

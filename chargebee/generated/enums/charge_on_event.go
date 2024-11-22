@@ -5,8 +5,8 @@ package enums
 type ChargeOnEventEnum string
 
 const (
-        AttachedItemPlanActivation ChargeOnEventEnum = "plan_activation"
-        AttachedItemSubscriptionActivation ChargeOnEventEnum = "subscription_activation"
-        AttachedItemSubscriptionCreation ChargeOnEventEnum = "subscription_creation"
-        AttachedItemSubscriptionTrialStart ChargeOnEventEnum = "subscription_trial_start"
+	AttachedItemPlanActivation         ChargeOnEventEnum = "plan_activation"
+	AttachedItemSubscriptionActivation ChargeOnEventEnum = "subscription_activation"
+	AttachedItemSubscriptionCreation   ChargeOnEventEnum = "subscription_creation"
+	AttachedItemSubscriptionTrialStart ChargeOnEventEnum = "subscription_trial_start"
 )

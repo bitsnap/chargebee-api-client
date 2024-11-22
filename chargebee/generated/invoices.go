@@ -3,13 +3,14 @@ package chargebee
 // THIS IS GENERATED CODE. DO NOT EDIT.
 
 import (
+	"net/url"
+
 	. "github.com/bitsnap/chargebee-api-client/chargebee/client"
 	"github.com/bitsnap/chargebee-api-client/chargebee/generated/enums"
 	"github.com/bitsnap/chargebee-api-client/chargebee/generated/models"
 	"github.com/goccy/go-json"
 	"github.com/gofiber/fiber/v2"
 	"github.com/shopspring/decimal"
-	"net/url"
 )
 
 type Invoice struct {

@@ -5,6 +5,6 @@ package enums
 type AuthorizationReasonEnum string
 
 const (
-        BlockingFunds AuthorizationReasonEnum = "blocking_funds"
-        Verification AuthorizationReasonEnum = "verification"
+	BlockingFunds AuthorizationReasonEnum = "blocking_funds"
+	Verification  AuthorizationReasonEnum = "verification"
 )

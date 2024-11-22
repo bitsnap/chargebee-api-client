@@ -5,6 +5,6 @@ package enums
 type ItemApplicabilityEnum string
 
 const (
-        All ItemApplicabilityEnum = "all"
-        Restricted ItemApplicabilityEnum = "restricted"
+	All        ItemApplicabilityEnum = "all"
+	Restricted ItemApplicabilityEnum = "restricted"
 )

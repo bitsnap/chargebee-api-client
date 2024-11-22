@@ -5,7 +5,7 @@ package enums
 type PiiClearedEnum string
 
 const (
-        Active PiiClearedEnum = "active"
-        Cleared PiiClearedEnum = "cleared"
-        ScheduledForClear PiiClearedEnum = "scheduled_for_clear"
+	Active            PiiClearedEnum = "active"
+	Cleared           PiiClearedEnum = "cleared"
+	ScheduledForClear PiiClearedEnum = "scheduled_for_clear"
 )

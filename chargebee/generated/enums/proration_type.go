@@ -5,7 +5,7 @@ package enums
 type ProrationTypeEnum string
 
 const (
-        ProrationFullTerm ProrationTypeEnum = "full_term"
-        ProrationPartialTerm ProrationTypeEnum = "partial_term"
-        ProrationSiteDefault ProrationTypeEnum = "site_default"
+	ProrationFullTerm    ProrationTypeEnum = "full_term"
+	ProrationPartialTerm ProrationTypeEnum = "partial_term"
+	ProrationSiteDefault ProrationTypeEnum = "site_default"
 )

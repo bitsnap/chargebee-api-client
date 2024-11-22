@@ -5,8 +5,8 @@ package enums
 type DunningStatusEnum string
 
 const (
-        InvoiceExhausted DunningStatusEnum = "exhausted"
-        InvoiceInProgress DunningStatusEnum = "in_progress"
-        InvoiceStopped DunningStatusEnum = "stopped"
-        InvoiceSuccess DunningStatusEnum = "success"
+	InvoiceExhausted  DunningStatusEnum = "exhausted"
+	InvoiceInProgress DunningStatusEnum = "in_progress"
+	InvoiceStopped    DunningStatusEnum = "stopped"
+	InvoiceSuccess    DunningStatusEnum = "success"
 )

@@ -5,6 +5,6 @@ package enums
 type TrialPeriodUnitEnum string
 
 const (
-        TrialDay TrialPeriodUnitEnum = "day"
-        TrialMonth TrialPeriodUnitEnum = "month"
+	TrialDay   TrialPeriodUnitEnum = "day"
+	TrialMonth TrialPeriodUnitEnum = "month"
 )

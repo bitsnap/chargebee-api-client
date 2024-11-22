@@ -5,8 +5,8 @@ package enums
 type ItemTypeEnum string
 
 const (
-        ItemAddon ItemTypeEnum = "addon"
-        ItemCharge ItemTypeEnum = "charge"
-        ItemPlan ItemTypeEnum = "plan"
-        ItemSubscription ItemTypeEnum = "subscription"
+	ItemAddon        ItemTypeEnum = "addon"
+	ItemCharge       ItemTypeEnum = "charge"
+	ItemPlan         ItemTypeEnum = "plan"
+	ItemSubscription ItemTypeEnum = "subscription"
 )

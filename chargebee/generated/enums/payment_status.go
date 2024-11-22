@@ -5,6 +5,6 @@ package enums
 type PaymentStatusEnum string
 
 const (
-        NotPaid PaymentStatusEnum = "not_paid"
-        Paid PaymentStatusEnum = "paid"
+	NotPaid PaymentStatusEnum = "not_paid"
+	Paid    PaymentStatusEnum = "paid"
 )

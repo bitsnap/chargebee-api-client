@@ -5,6 +5,6 @@ package enums
 type UsageAccumulationResetFrequencyEnum string
 
 const (
-        Never UsageAccumulationResetFrequencyEnum = "never"
-        SubscriptionBillingFrequency UsageAccumulationResetFrequencyEnum = "subscription_billing_frequency"
+	Never                        UsageAccumulationResetFrequencyEnum = "never"
+	SubscriptionBillingFrequency UsageAccumulationResetFrequencyEnum = "subscription_billing_frequency"
 )

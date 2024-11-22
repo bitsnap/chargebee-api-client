@@ -5,8 +5,8 @@ package enums
 type EntityCodeEnum string
 
 const (
-        A EntityCodeEnum = "a"
-        B EntityCodeEnum = "b"
-        C EntityCodeEnum = "c"
-        D EntityCodeEnum = "d"
+	A EntityCodeEnum = "a"
+	B EntityCodeEnum = "b"
+	C EntityCodeEnum = "c"
+	D EntityCodeEnum = "d"
 )

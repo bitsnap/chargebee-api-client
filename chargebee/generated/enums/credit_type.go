@@ -5,7 +5,7 @@ package enums
 type CreditTypeEnum string
 
 const (
-        General CreditTypeEnum = "general"
-        LoyaltyCredits CreditTypeEnum = "loyalty_credits"
-        ReferralRewards CreditTypeEnum = "referral_rewards"
+	General         CreditTypeEnum = "general"
+	LoyaltyCredits  CreditTypeEnum = "loyalty_credits"
+	ReferralRewards CreditTypeEnum = "referral_rewards"
 )

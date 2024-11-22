@@ -3,10 +3,11 @@ package chargebee
 // THIS IS GENERATED CODE. DO NOT EDIT.
 
 import (
+	"net/url"
+
 	. "github.com/bitsnap/chargebee-api-client/chargebee/client"
 	"github.com/goccy/go-json"
 	"github.com/gofiber/fiber/v2"
-	"net/url"
 )
 
 func ListCustomerHierarchiesPageSortBy(site string, id string, offset string, sortBy *SortBy) ([]Hierarchy, string, error) {
@@ -17,43 +18,43 @@ func ListCustomerHierarchiesPageSortBy(site string, id string, offset string, so
 	if err != nil {
 		return nil, "", err
 	}
-		
-    content, err := GetQuery(client, parsedUrl, offset, sortBy)
-    if err != nil {
-        return nil, "", err
-    }
-    	
+
+	content, err := GetQuery(client, parsedUrl, offset, sortBy)
+	if err != nil {
+		return nil, "", err
+	}
+
 	type HierarchyListItem struct {
 		Hierarchy Hierarchy `json:"Hierarchy"`
 	}
 
-    type HierarchyPage struct {
-        List       []HierarchyListItem `json:"list"`
-        NextOffset string `json:"next_offset,omitempty"`
-    }
+	type HierarchyPage struct {
+		List       []HierarchyListItem `json:"list"`
+		NextOffset string              `json:"next_offset,omitempty"`
+	}
 
 	entries := HierarchyPage{
-		List:       make([]HierarchyListItem, 0, 10),
+		List: make([]HierarchyListItem, 0, 10),
 	}
 
 	err = json.Unmarshal(content, &entries)
 	if err != nil {
 		return nil, "", err
 	}
-	
+
 	if len(entries.List) == 0 {
-        return []Hierarchy{}, "", nil
-    }
-	
+		return []Hierarchy{}, "", nil
+	}
+
 	result := make([]Hierarchy, 0, len(entries.List))
 	for _, r := range entries.List {
 		result = append(result, r.Hierarchy)
 	}
 
-    if len(entries.NextOffset) > 0 {
-        return ResultWithOffset(result, offset, entries.NextOffset)
-    }
-	
+	if len(entries.NextOffset) > 0 {
+		return ResultWithOffset(result, offset, entries.NextOffset)
+	}
+
 	return result, "", nil
 }
 
@@ -62,9 +63,9 @@ func ListCustomerHierarchiesPage(site string, id string, offset string) ([]Hiera
 }
 
 type Hierarchy struct {
-    CustomerId string `json:"customer_id" validate:"required"`
-    ParentId string `json:"parent_id"`
-    PaymentOwnerId string `json:"payment_owner_id" validate:"required"`
-    InvoiceOwnerId string `json:"invoice_owner_id" validate:"required"`
-    ChildrenIds []string `json:"children_ids"`
+	CustomerId     string   `json:"customer_id" validate:"required"`
+	ParentId       string   `json:"parent_id"`
+	PaymentOwnerId string   `json:"payment_owner_id" validate:"required"`
+	InvoiceOwnerId string   `json:"invoice_owner_id" validate:"required"`
+	ChildrenIds    []string `json:"children_ids"`
 }

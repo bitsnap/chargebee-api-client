@@ -5,7 +5,7 @@ package enums
 type PeriodUnitEnum string
 
 const (
-        Day PeriodUnitEnum = "day"
-        Month PeriodUnitEnum = "month"
-        Week PeriodUnitEnum = "week"
+	Day   PeriodUnitEnum = "day"
+	Month PeriodUnitEnum = "month"
+	Week  PeriodUnitEnum = "week"
 )

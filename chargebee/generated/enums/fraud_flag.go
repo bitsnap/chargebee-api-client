@@ -5,7 +5,7 @@ package enums
 type FraudFlagEnum string
 
 const (
-        Fraudulent FraudFlagEnum = "fraudulent"
-        Safe FraudFlagEnum = "safe"
-        Suspicious FraudFlagEnum = "suspicious"
+	Fraudulent FraudFlagEnum = "fraudulent"
+	Safe       FraudFlagEnum = "safe"
+	Suspicious FraudFlagEnum = "suspicious"
 )

@@ -1,7 +1,6 @@
 package main
 
 import (
-	"github.com/bitsnap/chargebee-api-client/codegen/client/enums"
 	"os"
 	"path"
 	"strings"
@@ -289,7 +288,7 @@ func main() {
 		"targetDir", targetDir,
 	)
 
-	GenerateInto(targetEnumsDir, enums.EnumHeader, enums.GenerateEnumsContent())
+	GenerateInto(targetEnumsDir, client.EnumHeader, client.GenerateEnumsContent())
 	GenerateInto(rootDir, templates.NoHeader, templates.GeneratePublicAPIContent())
 	GenerateInto(targetDir, header, content)
 }

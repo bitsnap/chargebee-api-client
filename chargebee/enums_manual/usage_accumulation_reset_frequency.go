@@ -1,3 +1,0 @@
-package enums_manual
-
-type UsageAccumulationResetFrequencyEnum string

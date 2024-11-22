@@ -5,7 +5,7 @@ package enums
 type UsageCalculationEnum string
 
 const (
-        LastUsage UsageCalculationEnum = "last_usage"
-        MaxUsage UsageCalculationEnum = "max_usage"
-        SumOfUsages UsageCalculationEnum = "sum_of_usages"
+	LastUsage   UsageCalculationEnum = "last_usage"
+	MaxUsage    UsageCalculationEnum = "max_usage"
+	SumOfUsages UsageCalculationEnum = "sum_of_usages"
 )

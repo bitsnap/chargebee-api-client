@@ -5,7 +5,7 @@ package enums
 type ChangeOptionEnum string
 
 const (
-        QuotedSubscriptionEndOfTerm ChangeOptionEnum = "end_of_term"
-        QuotedSubscriptionImmediately ChangeOptionEnum = "immediately"
-        QuotedSubscriptionSpecificDate ChangeOptionEnum = "specific_date"
+	QuotedSubscriptionEndOfTerm    ChangeOptionEnum = "end_of_term"
+	QuotedSubscriptionImmediately  ChangeOptionEnum = "immediately"
+	QuotedSubscriptionSpecificDate ChangeOptionEnum = "specific_date"
 )

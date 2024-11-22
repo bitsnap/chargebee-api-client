@@ -5,6 +5,6 @@ package enums
 type AutoCollectionEnum string
 
 const (
-        Off AutoCollectionEnum = "off"
-        On AutoCollectionEnum = "on"
+	Off AutoCollectionEnum = "off"
+	On  AutoCollectionEnum = "on"
 )

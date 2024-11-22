@@ -5,7 +5,7 @@ package enums
 type OperationTypeEnum string
 
 const (
-        ChangeSubscription OperationTypeEnum = "change_subscription"
-        CreateSubscriptionForCustomer OperationTypeEnum = "create_subscription_for_customer"
-        OnetimeInvoice OperationTypeEnum = "onetime_invoice"
+	ChangeSubscription            OperationTypeEnum = "change_subscription"
+	CreateSubscriptionForCustomer OperationTypeEnum = "create_subscription_for_customer"
+	OnetimeInvoice                OperationTypeEnum = "onetime_invoice"
 )

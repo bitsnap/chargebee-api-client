@@ -5,6 +5,6 @@ package enums
 type TaxabilityEnum string
 
 const (
-        TaxesExempt TaxabilityEnum = "exempt"
-        TaxesTaxable TaxabilityEnum = "taxable"
+	TaxesExempt  TaxabilityEnum = "exempt"
+	TaxesTaxable TaxabilityEnum = "taxable"
 )

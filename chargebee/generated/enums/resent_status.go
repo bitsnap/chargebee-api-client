@@ -5,6 +5,6 @@ package enums
 type ResentStatusEnum string
 
 const (
-        FullyResent ResentStatusEnum = "fully_resent"
-        PartiallyResent ResentStatusEnum = "partially_resent"
+	FullyResent     ResentStatusEnum = "fully_resent"
+	PartiallyResent ResentStatusEnum = "partially_resent"
 )

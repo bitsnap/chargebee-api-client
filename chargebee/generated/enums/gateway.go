@@ -5,8 +5,8 @@ package enums
 type GatewayEnum string
 
 const (
-        Chargebee GatewayEnum = "chargebee"
-        ChargebeePayments GatewayEnum = "chargebee_payments"
-        Stripe GatewayEnum = "stripe"
-        Wepay GatewayEnum = "wepay"
+	Chargebee         GatewayEnum = "chargebee"
+	ChargebeePayments GatewayEnum = "chargebee_payments"
+	Stripe            GatewayEnum = "stripe"
+	Wepay             GatewayEnum = "wepay"
 )

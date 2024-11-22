@@ -5,7 +5,7 @@ package enums
 type DurationTypeEnum string
 
 const (
-        CouponForever DurationTypeEnum = "forever"
-        CouponLimitedPeriod DurationTypeEnum = "limited_period"
-        CouponOneTime DurationTypeEnum = "one_time"
+	CouponForever       DurationTypeEnum = "forever"
+	CouponLimitedPeriod DurationTypeEnum = "limited_period"
+	CouponOneTime       DurationTypeEnum = "one_time"
 )

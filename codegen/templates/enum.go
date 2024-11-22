@@ -2,9 +2,9 @@ package templates
 
 import (
 	"embed"
-	"github.com/bitsnap/chargebee-api-client/codegen/templates/scraper"
 	"strings"
 
+	"github.com/bitsnap/chargebee-api-client/codegen/templates/scraper"
 	. "github.com/bitsnap/go-util"
 )
 
@@ -58,7 +58,6 @@ func GenerateEnum(name, abbr, prefix, t, page string) string {
 		Prefix: prefix,
 		Values: values,
 	})
-
 	if err != nil {
 		panic(err)
 	}

@@ -5,5 +5,5 @@ package enums
 type PaymentVoucherTypeEnum string
 
 const (
-        Boleto PaymentVoucherTypeEnum = "boleto"
+	Boleto PaymentVoucherTypeEnum = "boleto"
 )

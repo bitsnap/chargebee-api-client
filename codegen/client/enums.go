@@ -1,4 +1,4 @@
-package enums
+package client
 
 import "github.com/bitsnap/chargebee-api-client/codegen/templates"
 
@@ -199,9 +199,25 @@ var content = map[string][]func() string{
 	"trial_period_unit.go": {func() string {
 		return templates.GeneratePreffixedStringEnum("TrialPeriodUnitEnum", "Trial", "trial_period_unit", "https://apidocs.chargebee.com/docs/api/item_prices")
 	}},
-	//"type.go": {func() string {
-	//	return templates.GeneratePreffixedStringEnum("TypeEnum", "Type", "type", "https://apidocs.chargebee.com/docs/api/item_prices")
-	//}},
+	"type.go": {func() string {
+		return templates.GenerateEnum("TypeEnum", "type", "EntitlementFeatureType", "string", "https://apidocs.chargebee.com/docs/api/features")
+	}, func() string {
+		return templates.GenerateEnum("TypeEnum", "type", "CreditNoteType", "TypeEnum", "https://apidocs.chargebee.com/docs/api/credit_notes")
+	}, func() string {
+		return templates.GenerateEnum("TypeEnum", "type", "PaymentReferenceNumberType", "TypeEnum", "https://apidocs.chargebee.com/docs/api/payment_reference_numbers")
+	}, func() string {
+		return templates.GenerateEnum("TypeEnum", "type", "PromotionalCreditType", "TypeEnum", "https://apidocs.chargebee.com/docs/api/promotional_credits")
+	}, func() string {
+		return templates.GenerateEnum("TypeEnum", "type", "AttachedItemType", "TypeEnum", "https://apidocs.chargebee.com/docs/api/attached_items")
+	}, func() string {
+		return templates.GenerateEnum("TypeEnum", "type", "ItemType", "TypeEnum", "https://apidocs.chargebee.com/docs/api/items")
+	}, func() string {
+		return templates.GenerateEnum("TypeEnum", "type", "PaymentSourceType", "TypeEnum", "https://apidocs.chargebee.com/docs/api/payment_sources")
+	}, func() string {
+		return templates.GenerateEnum("TypeEnum", "type", "TransactionType", "TypeEnum", "https://apidocs.chargebee.com/docs/api/transactions")
+	}, func() string {
+		return templates.GenerateEnum("TypeEnum", "type", "DiscountType", "TypeEnum", "https://apidocs.chargebee.com/docs/api/discounts")
+	}},
 	"usage_accumulation_reset_frequency.go": {func() string {
 		return templates.GenerateStringEnum("UsageAccumulationResetFrequencyEnum", "usage_accumulation_reset_frequency", "https://apidocs.chargebee.com/docs/api/item_prices")
 	}},
@@ -209,10 +225,10 @@ var content = map[string][]func() string{
 		return templates.GenerateStringEnum("UsageCalculationEnum", "usage_calculation", "https://apidocs.chargebee.com/docs/api/items")
 	}},
 	"validation_status.go": {func() string {
-		return templates.GenerateStringEnum("ValidationStatusEnum", "validation_status", "https://apidocs.chargebee.com/docs/api/addresses")
+		return templates.GeneratePreffixedStringEnum("ValidationStatusEnum", "Validation", "validation_status", "https://apidocs.chargebee.com/docs/api/addresses")
 	}},
 	"vat_number.go": {func() string {
-		return templates.GenerateStringEnum("VatNumberStatusEnum", "vat_number_status", "https://apidocs.chargebee.com/docs/api/customers")
+		return templates.GeneratePreffixedStringEnum("VatNumberStatusEnum", "Vat", "vat_number_status", "https://apidocs.chargebee.com/docs/api/customers")
 	}},
 	"webhook_status.go": {func() string {
 		return templates.GenerateStringEnum("WebhookStatusEnum", "webhook_status", "https://apidocs.chargebee.com/docs/api/events")

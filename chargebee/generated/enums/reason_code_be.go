@@ -5,5 +5,5 @@ package enums
 type BusinessEntityReasonCodeEnum string
 
 const (
-        BusinessEntityTransferCorrection BusinessEntityReasonCodeEnum = "correction"
+	BusinessEntityTransferCorrection BusinessEntityReasonCodeEnum = "correction"
 )

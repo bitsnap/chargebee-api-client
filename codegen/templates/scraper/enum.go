@@ -15,7 +15,6 @@ func ScrapeEnum(abbr string, page string) (map[string]string, error) {
 	values := make(map[string]string)
 
 	collector.OnHTML("div.cb-list-group", func(lists *colly.HTMLElement) {
-
 		filterAbbr := func(_ int, elem *goquery.Selection) bool {
 			return elem.Find("div.cb-list-item samp").First().Text() == abbr
 		}

@@ -5,7 +5,7 @@ package enums
 type DiscountTypeEnum string
 
 const (
-        FixedAmount DiscountTypeEnum = "fixed_amount"
-        OfferQuantity DiscountTypeEnum = "offer_quantity"
-        Percentage DiscountTypeEnum = "percentage"
+	FixedAmount   DiscountTypeEnum = "fixed_amount"
+	OfferQuantity DiscountTypeEnum = "offer_quantity"
+	Percentage    DiscountTypeEnum = "percentage"
 )

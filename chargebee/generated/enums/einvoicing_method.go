@@ -5,7 +5,7 @@ package enums
 type EinvoicingMethodEnum string
 
 const (
-        InvoicingAutomatic EinvoicingMethodEnum = "automatic"
-        InvoicingManual EinvoicingMethodEnum = "manual"
-        InvoicingSiteDefault EinvoicingMethodEnum = "site_default"
+	InvoicingAutomatic   EinvoicingMethodEnum = "automatic"
+	InvoicingManual      EinvoicingMethodEnum = "manual"
+	InvoicingSiteDefault EinvoicingMethodEnum = "site_default"
 )

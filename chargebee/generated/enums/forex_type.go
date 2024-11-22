@@ -5,6 +5,6 @@ package enums
 type ForexTypeEnum string
 
 const (
-        ForexAuto ForexTypeEnum = "auto"
-        ForexManual ForexTypeEnum = "manual"
+	ForexAuto   ForexTypeEnum = "auto"
+	ForexManual ForexTypeEnum = "manual"
 )

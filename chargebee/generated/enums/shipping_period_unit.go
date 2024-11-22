@@ -5,8 +5,8 @@ package enums
 type ShippingPeriodUnitEnum string
 
 const (
-        ShippingPeriodDay ShippingPeriodUnitEnum = "day"
-        ShippingPeriodMonth ShippingPeriodUnitEnum = "month"
-        ShippingPeriodWeek ShippingPeriodUnitEnum = "week"
-        ShippingPeriodYear ShippingPeriodUnitEnum = "year"
+	ShippingPeriodDay   ShippingPeriodUnitEnum = "day"
+	ShippingPeriodMonth ShippingPeriodUnitEnum = "month"
+	ShippingPeriodWeek  ShippingPeriodUnitEnum = "week"
+	ShippingPeriodYear  ShippingPeriodUnitEnum = "year"
 )

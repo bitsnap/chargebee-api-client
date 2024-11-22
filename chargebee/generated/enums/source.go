@@ -5,8 +5,8 @@ package enums
 type SourceEnum string
 
 const (
-        AdminConsole SourceEnum = "admin_console"
-        Api SourceEnum = "api"
-        HostedPage SourceEnum = "hosted_page"
-        ScheduledJob SourceEnum = "scheduled_job"
+	AdminConsole SourceEnum = "admin_console"
+	Api          SourceEnum = "api"
+	HostedPage   SourceEnum = "hosted_page"
+	ScheduledJob SourceEnum = "scheduled_job"
 )

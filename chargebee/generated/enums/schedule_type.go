@@ -5,6 +5,6 @@ package enums
 type ScheduleTypeEnum string
 
 const (
-        FixedIntervals ScheduleTypeEnum = "fixed_intervals"
-        SpecificDates ScheduleTypeEnum = "specific_dates"
+	FixedIntervals ScheduleTypeEnum = "fixed_intervals"
+	SpecificDates  ScheduleTypeEnum = "specific_dates"
 )

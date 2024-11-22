@@ -5,6 +5,6 @@ package enums
 type ApiVersionEnum string
 
 const (
-        V1 ApiVersionEnum = "v1"
-        V2 ApiVersionEnum = "v2"
+	V1 ApiVersionEnum = "v1"
+	V2 ApiVersionEnum = "v2"
 )

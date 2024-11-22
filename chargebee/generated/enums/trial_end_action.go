@@ -5,8 +5,8 @@ package enums
 type TrialEndActionEnum string
 
 const (
-        TrialEndActivateSubscription TrialEndActionEnum = "activate_subscription"
-        TrialEndCancelSubscription TrialEndActionEnum = "cancel_subscription"
-        TrialEndPlanDefault TrialEndActionEnum = "plan_default"
-        TrialEndSiteDefault TrialEndActionEnum = "site_default"
+	TrialEndActivateSubscription TrialEndActionEnum = "activate_subscription"
+	TrialEndCancelSubscription   TrialEndActionEnum = "cancel_subscription"
+	TrialEndPlanDefault          TrialEndActionEnum = "plan_default"
+	TrialEndSiteDefault          TrialEndActionEnum = "site_default"
 )

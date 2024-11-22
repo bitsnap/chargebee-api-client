@@ -5,6 +5,6 @@ package enums
 type ResourceTypeEnum string
 
 const (
-        ResourceCustomer ResourceTypeEnum = "customer"
-        ResourceSubscription ResourceTypeEnum = "subscription"
+	ResourceCustomer     ResourceTypeEnum = "customer"
+	ResourceSubscription ResourceTypeEnum = "subscription"
 )

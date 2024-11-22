@@ -5,8 +5,8 @@ package enums
 type VatNumberStatusEnum string
 
 const (
-        Invalid VatNumberStatusEnum = "invalid"
-        NotValidated VatNumberStatusEnum = "not_validated"
-        Undetermined VatNumberStatusEnum = "undetermined"
-        Valid VatNumberStatusEnum = "valid"
+	VatInvalid      VatNumberStatusEnum = "invalid"
+	VatNotValidated VatNumberStatusEnum = "not_validated"
+	VatUndetermined VatNumberStatusEnum = "undetermined"
+	VatValid        VatNumberStatusEnum = "valid"
 )

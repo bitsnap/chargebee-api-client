@@ -5,6 +5,6 @@ package enums
 type OrderTypeEnum string
 
 const (
-        OrderManual OrderTypeEnum = "manual"
-        OrderSystemGenerated OrderTypeEnum = "system_generated"
+	OrderManual          OrderTypeEnum = "manual"
+	OrderSystemGenerated OrderTypeEnum = "system_generated"
 )

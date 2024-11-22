@@ -5,8 +5,8 @@ package enums
 type ValidationStatusEnum string
 
 const (
-        Invalid ValidationStatusEnum = "invalid"
-        NotValidated ValidationStatusEnum = "not_validated"
-        PartiallyValid ValidationStatusEnum = "partially_valid"
-        Valid ValidationStatusEnum = "valid"
+	ValidationInvalid        ValidationStatusEnum = "invalid"
+	ValidationNotValidated   ValidationStatusEnum = "not_validated"
+	ValidationPartiallyValid ValidationStatusEnum = "partially_valid"
+	ValidationValid          ValidationStatusEnum = "valid"
 )
